@@ -1,5 +1,5 @@
-#ifndef LUDO_POO2_RECORRIDO_H
-#define LUDO_POO2_RECORRIDO_H
+#ifndef LUDO_RECORRIDO_H
+#define LUDO_RECORRIDO_H
 
 #include "Casilla.h"
 
