@@ -1,7 +1,3 @@
-//
-// Created by Gabriel Spranger Rojas on 2019-06-08.
-//
-
 #ifndef LUDO_FICHA_H
 #define LUDO_FICHA_H
 
