@@ -10,11 +10,7 @@ Este es un proyecto de Programación Orientada a Objetos 2.
 
 # Especificaciones
 
-0 : blanco
-1 : rojo
-2 : azul
-3 : verde
-4 : amarillo
+0 : blanco | 1 : rojo | 2 : azul | 3 : verde | 4 : amarillo
 
 # Instrucciones de uso
 
