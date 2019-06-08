@@ -1,6 +1,6 @@
 #ifndef LUDO_JUGADOR_H
 #define LUDO_JUGADOR_H
-
+  
 #include "Ficha.h"
 #include <iostream>
 #include <string>
