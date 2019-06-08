@@ -1,6 +1,7 @@
 #ifndef LUDO_POO2_JUGADOR_H
 #define LUDO_POO2_JUGADOR_H
 
+#include "Ficha.h"
 #include <string>
 
 using namespace std;
