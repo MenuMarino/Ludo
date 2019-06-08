@@ -4,10 +4,10 @@
 using namespace std;
 
 struct Dado{
-Dado(){};
-int lanzar(){  
-srand(time(0)); 
-return  ((rand() % 6) + 1);
+    Dado(){};
+    int lanzar(){  
+    srand(time(0)); 
+    return  ((rand() % 6) + 1);
 }
 };
 
