@@ -1,7 +1,3 @@
-//
-// Created by Gabriel Spranger Rojas on 2019-06-08.
-//
-
 #ifndef LUDO_CASILLA_H
 #define LUDO_CASILLA_H
 
