@@ -14,9 +14,9 @@ public:
     bool is_taken = false;
 
     Casilla() {}
-    Casilla(double x, double y): x{x}, y{y} {}
+    Casilla(double x, double y, int color): x{x}, y{y}, color{color} {}
 
-    virtual void mostrar() = 0;
+//    virtual void mostrar() = 0;
 
     virtual double get_x() { return x; }
     virtual double get_y() { return y; }

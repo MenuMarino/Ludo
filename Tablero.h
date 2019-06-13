@@ -3,11 +3,12 @@
 
 #include <vector>
 #include "Casilla.h"
+#include "CasillaNormal.h"
 
 class Tablero {
     vector<Casilla*> casillas;
 public:
-    Tablero() {}
+    Tablero();
     void mostrar();
 };
 
