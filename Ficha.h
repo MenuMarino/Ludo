@@ -4,17 +4,18 @@
 #include "Casilla.h"
 
 class Ficha {
-    int x;
-    int y;
-    char estado;
     int color;
 public:
-    explicit Ficha(int x, int y, char estado, int color);
-    void mover(Casilla* casilla);
+    double x;
+    double y;
+    char estado;
 
-    int get_x() { return x; }
-    int get_y() { return y; }
-    int get_color() { return color; }
+    Ficha(double x, double y, int color);
+    void mover(Casilla* casilla, char tipo_de_casilla); // se necesita el tipo de casilla para hacerle un dynamic_cast al parametro 'Casilla'
+
+    double get_x() { return x; }
+    double get_y() { return y; }
+    double get_color() { return color; }
     char get_estado() { return estado; }
 };
 

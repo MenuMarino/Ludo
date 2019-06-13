@@ -1,5 +1,5 @@
-cmake_minimum_required(VERSION 3.14)
-project(Ludo-poo2)
+cmake_minimum_required(VERSION 3.13.4)
+project(Ludo)
 
 set(CMAKE_CXX_STANDARD 14)
 
@@ -18,5 +18,5 @@ if(SFML_FOUND)
     message(STATUS "SFML_VERSION: ${SFML_VERSION}")
 endif()
 
-add_executable(Ludo-poo2 main.cpp main.cpp Jugador.cpp Jugador.h Recorrido.cpp Recorrido.h)
-target_link_libraries (Ludo-poo2 sfml-graphics sfml-window sfml-system)
+add_executable(Ludo Tablero.cpp Jugador.h Jugador.cpp Ficha.cpp main.cpp Window.cpp Window.h CasillaCasa.cpp CasillaCasa.h CasillaComienzo.cpp CasillaComienzo.h CasillaSegura.cpp CasillaSegura.h CasillaNormal.cpp CasillaNormal.h CasillaDestino.cpp CasillaDestino.h Juego.cpp)
+target_link_libraries (Ludo sfml-graphics sfml-window sfml-system)

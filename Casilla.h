@@ -3,18 +3,23 @@
 
 #include <iostream>
 
-class Casilla {
-    int x; // posicion en x
-    int y; // posicion en y
-    int color; // 1 rojo, 2 azul, 3 verde, 4 amarillo o 0 blanco
+using namespace std;
 
+class Casilla {
+protected:
+    double x; // posicion en x
+    double y; // posicion en y
+    int color; // 1 rojo 2 azul 3 verde 4 amarillo
 public:
-    Casilla(int x, int y, int color): x{x}, y{y}, color{color} {}
+    bool is_taken = false;
+
+    Casilla() {}
+    Casilla(double x, double y): x{x}, y{y} {}
 
     virtual void mostrar() = 0;
 
-    virtual int get_x() { return x; }
-    virtual int get_y() { return y; }
+    virtual double get_x() { return x; }
+    virtual double get_y() { return y; }
     virtual int get_color() { return color; }
     
 };
