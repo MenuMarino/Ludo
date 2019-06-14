@@ -10,6 +10,10 @@
 iostream
 -
 
+/Users/gabrielspranger/Desktop/POO II/Ludo/CasillaNormal.h
+Casilla.h
+/Users/gabrielspranger/Desktop/POO II/Ludo/Casilla.h
+
 /Users/gabrielspranger/Desktop/POO II/Ludo/Dado.h
 iostream
 -
@@ -40,10 +44,6 @@ Ficha.h
 Tablero.h
 /Users/gabrielspranger/Desktop/POO II/Ludo/Tablero.h
 
-/Users/gabrielspranger/Desktop/POO II/Ludo/Jugador.cpp
-Jugador.h
-/Users/gabrielspranger/Desktop/POO II/Ludo/Jugador.h
-
 /Users/gabrielspranger/Desktop/POO II/Ludo/Jugador.h
 Ficha.h
 /Users/gabrielspranger/Desktop/POO II/Ludo/Ficha.h
@@ -59,4 +59,6 @@ vector
 -
 Casilla.h
 /Users/gabrielspranger/Desktop/POO II/Ludo/Casilla.h
+CasillaNormal.h
+/Users/gabrielspranger/Desktop/POO II/Ludo/CasillaNormal.h
 

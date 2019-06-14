@@ -4,7 +4,7 @@
 
 #include "CasillaNormal.h"
 
-CasillaNormal::CasillaNormal(double _x, double _y) : Casilla(_x, _y) {
+CasillaNormal::CasillaNormal(double _x, double _y) {
     x = _x;
     y = _y;
     color = 0;

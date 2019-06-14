@@ -15,9 +15,9 @@ class Window {
     sf::RenderWindow window;
 
 public:
-    Window(){};
-    Window(const std::string& WindowName);
-    ~Window();
+    Window() = default;
+    explicit Window(const std::string& WindowName);
+    ~Window() = default;
     void openWindow();
 };
 

@@ -8,18 +8,28 @@
 
 using namespace std;
 
+int preguntar_jugadores(int& num_jugadores) {
+    cerr << "¡BIENVENIDO A LUDO!" << endl;
+
+    do {
+        cout << "Cuántos jugadores desea?" << endl;
+        cin >> num_jugadores;
+    } while (num_jugadores < 2 || num_jugadores > 4);
+
+    return num_jugadores;
+}
+
 int main() {
 
+    int num_jugadores = preguntar_jugadores(num_jugadores);
 
+    Window* ludo;
 
-    Window *Ludo;
+    ludo = new Window("Ludo");
 
-    Ludo = new Window("Ludo");
+    ludo->openWindow();
 
-    Ludo->openWindow();
-
-    delete Ludo;
-    Ludo = nullptr;
+    delete ludo;
 
     return 0;
 

@@ -26,6 +26,7 @@ CMakeFiles/Ludo.dir/Ficha.cpp.o: ../Ficha.cpp
 CMakeFiles/Ludo.dir/Ficha.cpp.o: ../Ficha.h
 
 CMakeFiles/Ludo.dir/Juego.cpp.o: ../Casilla.h
+CMakeFiles/Ludo.dir/Juego.cpp.o: ../CasillaNormal.h
 CMakeFiles/Ludo.dir/Juego.cpp.o: ../Dado.h
 CMakeFiles/Ludo.dir/Juego.cpp.o: ../Ficha.h
 CMakeFiles/Ludo.dir/Juego.cpp.o: ../Juego.cpp
@@ -40,6 +41,7 @@ CMakeFiles/Ludo.dir/Jugador.cpp.o: ../Jugador.cpp
 CMakeFiles/Ludo.dir/Jugador.cpp.o: ../Jugador.h
 
 CMakeFiles/Ludo.dir/Tablero.cpp.o: ../Casilla.h
+CMakeFiles/Ludo.dir/Tablero.cpp.o: ../CasillaNormal.h
 CMakeFiles/Ludo.dir/Tablero.cpp.o: ../Tablero.cpp
 CMakeFiles/Ludo.dir/Tablero.cpp.o: ../Tablero.h
 

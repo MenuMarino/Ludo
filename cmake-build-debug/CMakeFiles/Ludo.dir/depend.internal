@@ -27,6 +27,7 @@ CMakeFiles/Ludo.dir/Ficha.cpp.o
  /Users/gabrielspranger/Desktop/POO II/Ludo/Ficha.h
 CMakeFiles/Ludo.dir/Juego.cpp.o
  /Users/gabrielspranger/Desktop/POO II/Ludo/Casilla.h
+ /Users/gabrielspranger/Desktop/POO II/Ludo/CasillaNormal.h
  /Users/gabrielspranger/Desktop/POO II/Ludo/Dado.h
  /Users/gabrielspranger/Desktop/POO II/Ludo/Ficha.h
  /Users/gabrielspranger/Desktop/POO II/Ludo/Juego.cpp
@@ -41,6 +42,7 @@ CMakeFiles/Ludo.dir/Jugador.cpp.o
  /Users/gabrielspranger/Desktop/POO II/Ludo/Jugador.h
 CMakeFiles/Ludo.dir/Tablero.cpp.o
  /Users/gabrielspranger/Desktop/POO II/Ludo/Casilla.h
+ /Users/gabrielspranger/Desktop/POO II/Ludo/CasillaNormal.h
  /Users/gabrielspranger/Desktop/POO II/Ludo/Tablero.cpp
  /Users/gabrielspranger/Desktop/POO II/Ludo/Tablero.h
 CMakeFiles/Ludo.dir/Window.cpp.o

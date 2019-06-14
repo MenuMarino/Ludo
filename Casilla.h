@@ -16,8 +16,6 @@ public:
     Casilla() {}
     Casilla(double x, double y, int color): x{x}, y{y}, color{color} {}
 
-//    virtual void mostrar() = 0;
-
     virtual double get_x() { return x; }
     virtual double get_y() { return y; }
     virtual int get_color() { return color; }

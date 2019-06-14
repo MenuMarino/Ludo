@@ -27,7 +27,3 @@ void Window::openWindow() {
         window.display();
     }
 }
-
-Window::~Window(){
-    /// eliminar a los jugadores y casillas
-}
