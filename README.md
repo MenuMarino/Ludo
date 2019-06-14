@@ -16,6 +16,11 @@ Este es un proyecto de Programación Orientada a Objetos 2.
 
 # Reglas de juego o programa
 
+- Minimo se jugara con 2 personas
+- Maximo 4 personas
+- Si sacas 6 en el dado, se te otorga la posibilidad de jugar de nuevo
+
+
 # Integrantes
 
 - Rodrigo Céspedes
