@@ -122,6 +122,7 @@ CMakeFiles/Ludo.dir/Window.cpp.o: /usr/local/Cellar/sfml/2.5.1/include/SFML/Wind
 CMakeFiles/Ludo.dir/Window.cpp.o: /usr/local/Cellar/sfml/2.5.1/include/SFML/Window/WindowHandle.hpp
 CMakeFiles/Ludo.dir/Window.cpp.o: /usr/local/Cellar/sfml/2.5.1/include/SFML/Window/WindowStyle.hpp
 
+CMakeFiles/Ludo.dir/main.cpp.o: ../Dado.h
 CMakeFiles/Ludo.dir/main.cpp.o: ../Window.h
 CMakeFiles/Ludo.dir/main.cpp.o: ../main.cpp
 CMakeFiles/Ludo.dir/main.cpp.o: /usr/local/Cellar/sfml/2.5.1/include/SFML/Config.hpp
