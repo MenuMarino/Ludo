@@ -6,6 +6,9 @@
 #define LUDO_WINDOW_H
 
 #include <SFML/Graphics.hpp>
+#include "Dado.h"
+#include "DadoResultado.h"
+#include "Jugador.h"
 
 class Window {
     const int WINDOW_WIDTH = 1132;
@@ -15,15 +18,13 @@ class Window {
 
 public:
     sf::RenderWindow window;
-    sf::Sprite dado;
-    sf::Texture dadoTexture;
 
     Window() = default;
     explicit Window(const std::string& WindowName);
     ~Window() = default;
-    void openWindow(const sf::CircleShape& j1, const sf::CircleShape& j2);
-    void openWindow(const sf::CircleShape& j1, const sf::CircleShape& j2, const sf::CircleShape& j3);
-    void openWindow(const sf::CircleShape& j1, const sf::CircleShape& j2, const sf::CircleShape& j3, const sf::CircleShape& j4);
+    void openWindow(Jugador j1, Jugador j2);
+    void openWindow(Jugador j1, Jugador j2, Jugador j3);
+    void openWindow(Jugador j1, Jugador j2, Jugador j3, Jugador j4);
 };
 
 

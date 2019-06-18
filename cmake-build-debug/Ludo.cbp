@@ -114,6 +114,9 @@
 		<Unit filename="/Users/gabrielspranger/Desktop/POO II/Ludo/CasillaSegura.h">
 			<Option target="Ludo"/>
 		</Unit>
+		<Unit filename="/Users/gabrielspranger/Desktop/POO II/Ludo/DadoResultado.h">
+			<Option target="Ludo"/>
+		</Unit>
 		<Unit filename="/Users/gabrielspranger/Desktop/POO II/Ludo/Ficha.cpp">
 			<Option target="Ludo"/>
 		</Unit>
