@@ -8,24 +8,36 @@
 #include <SFML/Graphics.hpp>
 #include "Dado.h"
 
+const int TEXT_SIZE = 40;
+
 class DadoResultado {
 
     sf::Font font;
     sf::Text text;
 
 public:
+    DadoResultado() {
+        font.loadFromFile("/Users/gabrielspranger/Desktop/POO II/Ludo/Fonts/font.ttf");
+        text.setFont(font);
+//        text.setString("6"); // text.setString(to_string(dado.lanzar()));
+        text.setCharacterSize(TEXT_SIZE);
+        text.setFillColor(sf::Color::Black);
+        text.setStyle(sf::Text::Bold);
+        text.setPosition(0, 0);
+    }
     DadoResultado(double x, double y) {
         font.loadFromFile("/Users/gabrielspranger/Desktop/POO II/Ludo/Fonts/font.ttf");
-        Dado dado;
         text.setFont(font);
-        text.setString("6"); // text.setString(to_string(dado.lanzar()));
-        text.setCharacterSize(30); // in pixels, not points!
+//        text.setString("6"); // text.setString(to_string(dado.lanzar()));
+        text.setCharacterSize(TEXT_SIZE);
         text.setFillColor(sf::Color::Black);
         text.setStyle(sf::Text::Bold);
         text.setPosition(x, y);
     }
 
     sf::Text get_dado_resultado() { return text; }
+    void set_position(double new_x, double new_y) { text.setPosition(new_x, new_y); }
+    void set_text(int dado_resultado) { text.setString(to_string(dado_resultado)); }
 
 };
 

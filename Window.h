@@ -9,6 +9,19 @@
 #include "Dado.h"
 #include "DadoResultado.h"
 #include "Jugador.h"
+#include "DadoResultado.h"
+
+const int YELLOW_CORNER_X = 60;
+const int YELLOW_CORNER_Y = 1040;
+
+const int GREEN_CORNER_X = 60;
+const int GREEN_CORNER_Y = 60;
+
+const int RED_CORNER_X = 1060;
+const int RED_CORNER_Y = 60;
+
+const int BLUE_CORNER_X = 1060;
+const int BLUE_CORNER_Y = 1040;
 
 class Window {
     const int WINDOW_WIDTH = 1132;
@@ -18,6 +31,8 @@ class Window {
 
 public:
     sf::RenderWindow window;
+    Dado dado;
+    DadoResultado dado_resultado;
 
     Window() = default;
     explicit Window(const std::string& WindowName);
