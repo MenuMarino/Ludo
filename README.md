@@ -10,13 +10,19 @@ Este es un proyecto del curso de Programación Orientada a Objetos II.
 
 # Especificaciones
 - Los jugadores son identificados con colores:
-	0 : blanco | 1 : rojo | 2 : azul | 3 : verde | 4 : amarillo
+	- 0 : blanco 
+	- 1 : rojo 
+	- 2 : azul 
+	- 3 : verde
+	- 4 : amarillo
 
 # Instrucciones de uso
 
+- Falta llenar
+
 # Reglas de juego o programa
 
-- 2 - 4 jugadores.
+- 2 a 4 jugadores.
 - Al comenzar el juego, se debe especificar el numero de jugadores y el nombre que va a tener cada uno. El color de cada jugador se elige al azar.
 - Cada jugador tiene su turno donde puede lanzar el dado. El jugador se mueve x casillas, donde x es el numero que se obtuvo por lanzar el dado.
 - Si sacas 6 en el dado, se te otorga la posibilidad de jugar de nuevo. Si te sacas tres 6 seguidos, pierdes tu turno por suertudo.
