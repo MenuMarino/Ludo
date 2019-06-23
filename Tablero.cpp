@@ -1,6 +1,7 @@
 #include "Tablero.h"
 
 Tablero::Tablero() {
+    // TODO: Hacer esto con hilos
     /// Casillas Normales
     casillas.emplace_back(new Casilla(490.5332, 1094.2657, 0)); // casilla 0
     casillas.emplace_back(new Casilla(490.5332, 1018.7991, 4)); // comienzo amarillo
@@ -128,10 +129,6 @@ Tablero::Tablero() {
     recta_final_verde_size = recta_final_verde.size();
     recta_final_rojo_size = recta_final_rojo.size();
     recta_final_azul_size = recta_final_azul.size();
-}
-
-void Tablero::mostrar() {
-
 }
 
 Tablero::~Tablero() {

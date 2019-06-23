@@ -13,7 +13,7 @@ Window::Window(const std::string& WindowName) {
 
 void Window::openWindow(vector<Jugador*>& _jugadores, const int& num_jugadores) {
     this->jugadores = _jugadores;
-            /// Logica del Movimiento
+            /// Logica del Movimiento (no descomentar)
 //    int i = 2;
 //    int j = 0;
 //    bool in_safe_zone = false;
@@ -22,6 +22,8 @@ void Window::openWindow(vector<Jugador*>& _jugadores, const int& num_jugadores) 
         while (window.pollEvent(event)) {
             if (event.type == sf::Event::Closed)
                 window.close();
+            // si se ha clickeado dentro de la imagen dado, lanzalo y dibuja el resultado
+            // el resultado se guarda en la variable num_movimientos
             if (event.type == sf::Event::MouseButtonReleased) {
                 sf::Vector2f clickCoordinate = window.mapPixelToCoords(sf::Mouse::getPosition(window)); // get click coordinates
 
@@ -32,7 +34,7 @@ void Window::openWindow(vector<Jugador*>& _jugadores, const int& num_jugadores) 
                     dado_resultado.set_text(num_movimientos);
                 }
             }
-            /// Logica de Movimiento
+            /// Logica de Movimiento (no descomentar)
 //            if (event.type == sf::Event::MouseButtonReleased) {
 //                sf::Vector2f clickCoordinate = window.mapPixelToCoords(sf::Mouse::getPosition(window));
 //
@@ -73,6 +75,7 @@ void Window::openWindow(vector<Jugador*>& _jugadores, const int& num_jugadores) 
         window.draw(sprite);
         window.draw(dado.get_dado());
         window.draw(dado_resultado.get_dado_resultado());
+        // por cada jugador y por cada ficha que tenga ese jugador, dibujala
         for (int i = 0; i < num_jugadores; ++i) {
             Jugador* jugador = jugadores[i];
             for (int j = 0; j < jugador->get_num_fichas(); ++j) {

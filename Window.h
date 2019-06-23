@@ -39,28 +39,28 @@ class Window {
     Tablero tablero;
 public:
 
-    /// Coordenadas Amarillo
+    /// Coordenadas Importantes Amarillo
     const double ultima_casilla_normal_para_amarillo_x = tablero.get_casilla_x_at(tablero.get_casilla_size()-1);
     const double ultima_casilla_normal_para_amarillo_y = tablero.get_casilla_y_at(tablero.get_casilla_size()-1);
 
     const double ultima_casilla_segura_para_amarillo_x = tablero.get_recta_final_amarillo_x_at(5);
     const double ultima_casilla_segura_para_amarillo_y = tablero.get_recta_final_amarillo_y_at(5);
 
-    /// Coordenadas Verde
+    /// Coordenadas Importantes Verde
     const double ultima_casilla_normal_para_verde_x = tablero.get_casilla_x_at(12);
     const double ultima_casilla_normal_para_verde_y = tablero.get_casilla_y_at(12);
 
     const double ultima_casilla_segura_para_verde_x = tablero.get_recta_final_verde_x_at(5);
     const double ultima_casilla_segura_para_verde_y = tablero.get_recta_final_verde_y_at(5);
 
-    /// Coordenadas Rojo
+    /// Coordenadas Importantes Rojo
     const double ultima_casilla_normal_para_rojo_x = tablero.get_casilla_x_at(12);
     const double ultima_casilla_normal_para_rojo_y = tablero.get_casilla_y_at(12);
 
     const double ultima_casilla_segura_para_rojo_x = tablero.get_recta_final_rojo_x_at(5);
     const double ultima_casilla_segura_para_rojo_y = tablero.get_recta_final_rojo_y_at(5);
 
-    /// Coordenadas Azul
+    /// Coordenadas Importantes Azul
     const double ultima_casilla_normal_para_azul_x = tablero.get_casilla_x_at(12);
     const double ultima_casilla_normal_para_azul_y = tablero.get_casilla_y_at(12);
 

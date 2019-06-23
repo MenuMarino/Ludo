@@ -25,7 +25,6 @@ class Tablero {
     int recta_final_azul_size;
 public:
     Tablero();
-    void mostrar();
 
     /// Casillas Normales
     vector<Casilla*> get_casillas() { return casillas; }

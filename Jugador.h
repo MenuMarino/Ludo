@@ -13,7 +13,7 @@ class Jugador {
 public:
     Jugador() = default;
     Jugador(const string& nombre, int color): nombre{nombre}, color{color} {
-
+        // de acuerdo al color, las 4 fichas se ponen en la casa correspondiente
         switch (color) {
             case 1:
                 fichas.emplace_back(new Ficha(839.1333-FICHA_RADIUS, 226.4-FICHA_RADIUS, 1));
