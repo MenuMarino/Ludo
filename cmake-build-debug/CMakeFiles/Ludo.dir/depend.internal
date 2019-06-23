@@ -195,10 +195,12 @@ CMakeFiles/Ludo.dir/Tablero.cpp.o
  /Users/gabrielspranger/Desktop/POO II/Ludo/Tablero.h
 CMakeFiles/Ludo.dir/Window.cpp.o
  /Users/gabrielspranger/Desktop/POO II/Ludo/Casilla.h
+ /Users/gabrielspranger/Desktop/POO II/Ludo/CasillaNormal.h
  /Users/gabrielspranger/Desktop/POO II/Ludo/Dado.h
  /Users/gabrielspranger/Desktop/POO II/Ludo/DadoResultado.h
  /Users/gabrielspranger/Desktop/POO II/Ludo/Ficha.h
  /Users/gabrielspranger/Desktop/POO II/Ludo/Jugador.h
+ /Users/gabrielspranger/Desktop/POO II/Ludo/Tablero.h
  /Users/gabrielspranger/Desktop/POO II/Ludo/Window.cpp
  /Users/gabrielspranger/Desktop/POO II/Ludo/Window.h
  /usr/local/Cellar/sfml/2.5.1/include/SFML/Config.hpp
@@ -277,10 +279,12 @@ CMakeFiles/Ludo.dir/Window.cpp.o
  /usr/local/Cellar/sfml/2.5.1/include/SFML/Window/WindowStyle.hpp
 CMakeFiles/Ludo.dir/main.cpp.o
  /Users/gabrielspranger/Desktop/POO II/Ludo/Casilla.h
+ /Users/gabrielspranger/Desktop/POO II/Ludo/CasillaNormal.h
  /Users/gabrielspranger/Desktop/POO II/Ludo/Dado.h
  /Users/gabrielspranger/Desktop/POO II/Ludo/DadoResultado.h
  /Users/gabrielspranger/Desktop/POO II/Ludo/Ficha.h
  /Users/gabrielspranger/Desktop/POO II/Ludo/Jugador.h
+ /Users/gabrielspranger/Desktop/POO II/Ludo/Tablero.h
  /Users/gabrielspranger/Desktop/POO II/Ludo/Window.h
  /Users/gabrielspranger/Desktop/POO II/Ludo/main.cpp
  /usr/local/Cellar/sfml/2.5.1/include/SFML/Config.hpp

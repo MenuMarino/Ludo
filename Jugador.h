@@ -36,7 +36,9 @@ public:
 
     };
 
+    sf::Vector2f get_position() { return jugador.getPosition(); }
     sf::CircleShape get_jugador() { return jugador; }
+    void move_to(double destX, double destY) { jugador.setPosition(sf::Vector2f(destX, destY)); }
 
     void jugar(Ficha* _ficha, Dado dado);
 };

@@ -194,10 +194,12 @@ CMakeFiles/Ludo.dir/Tablero.cpp.o: ../Tablero.cpp
 CMakeFiles/Ludo.dir/Tablero.cpp.o: ../Tablero.h
 
 CMakeFiles/Ludo.dir/Window.cpp.o: ../Casilla.h
+CMakeFiles/Ludo.dir/Window.cpp.o: ../CasillaNormal.h
 CMakeFiles/Ludo.dir/Window.cpp.o: ../Dado.h
 CMakeFiles/Ludo.dir/Window.cpp.o: ../DadoResultado.h
 CMakeFiles/Ludo.dir/Window.cpp.o: ../Ficha.h
 CMakeFiles/Ludo.dir/Window.cpp.o: ../Jugador.h
+CMakeFiles/Ludo.dir/Window.cpp.o: ../Tablero.h
 CMakeFiles/Ludo.dir/Window.cpp.o: ../Window.cpp
 CMakeFiles/Ludo.dir/Window.cpp.o: ../Window.h
 CMakeFiles/Ludo.dir/Window.cpp.o: /usr/local/Cellar/sfml/2.5.1/include/SFML/Config.hpp
@@ -276,10 +278,12 @@ CMakeFiles/Ludo.dir/Window.cpp.o: /usr/local/Cellar/sfml/2.5.1/include/SFML/Wind
 CMakeFiles/Ludo.dir/Window.cpp.o: /usr/local/Cellar/sfml/2.5.1/include/SFML/Window/WindowStyle.hpp
 
 CMakeFiles/Ludo.dir/main.cpp.o: ../Casilla.h
+CMakeFiles/Ludo.dir/main.cpp.o: ../CasillaNormal.h
 CMakeFiles/Ludo.dir/main.cpp.o: ../Dado.h
 CMakeFiles/Ludo.dir/main.cpp.o: ../DadoResultado.h
 CMakeFiles/Ludo.dir/main.cpp.o: ../Ficha.h
 CMakeFiles/Ludo.dir/main.cpp.o: ../Jugador.h
+CMakeFiles/Ludo.dir/main.cpp.o: ../Tablero.h
 CMakeFiles/Ludo.dir/main.cpp.o: ../Window.h
 CMakeFiles/Ludo.dir/main.cpp.o: ../main.cpp
 CMakeFiles/Ludo.dir/main.cpp.o: /usr/local/Cellar/sfml/2.5.1/include/SFML/Config.hpp

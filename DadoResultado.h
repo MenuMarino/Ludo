@@ -19,7 +19,6 @@ public:
     DadoResultado() {
         font.loadFromFile("/Users/gabrielspranger/Desktop/POO II/Ludo/Fonts/font.ttf");
         text.setFont(font);
-//        text.setString("6"); // text.setString(to_string(dado.lanzar()));
         text.setCharacterSize(TEXT_SIZE);
         text.setFillColor(sf::Color::Black);
         text.setStyle(sf::Text::Bold);
@@ -28,7 +27,6 @@ public:
     DadoResultado(double x, double y) {
         font.loadFromFile("/Users/gabrielspranger/Desktop/POO II/Ludo/Fonts/font.ttf");
         text.setFont(font);
-//        text.setString("6"); // text.setString(to_string(dado.lanzar()));
         text.setCharacterSize(TEXT_SIZE);
         text.setFillColor(sf::Color::Black);
         text.setStyle(sf::Text::Bold);

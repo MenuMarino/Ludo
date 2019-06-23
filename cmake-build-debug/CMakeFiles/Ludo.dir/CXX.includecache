@@ -10,6 +10,10 @@
 iostream
 -
 
+/Users/gabrielspranger/Desktop/POO II/Ludo/CasillaNormal.h
+Casilla.h
+/Users/gabrielspranger/Desktop/POO II/Ludo/Casilla.h
+
 /Users/gabrielspranger/Desktop/POO II/Ludo/Dado.h
 SFML/Graphics.hpp
 -
@@ -36,6 +40,14 @@ Ficha.h
 Dado.h
 /Users/gabrielspranger/Desktop/POO II/Ludo/Dado.h
 
+/Users/gabrielspranger/Desktop/POO II/Ludo/Tablero.h
+vector
+-
+Casilla.h
+/Users/gabrielspranger/Desktop/POO II/Ludo/Casilla.h
+CasillaNormal.h
+/Users/gabrielspranger/Desktop/POO II/Ludo/CasillaNormal.h
+
 /Users/gabrielspranger/Desktop/POO II/Ludo/Window.cpp
 Window.h
 /Users/gabrielspranger/Desktop/POO II/Ludo/Window.h
@@ -51,6 +63,18 @@ Jugador.h
 /Users/gabrielspranger/Desktop/POO II/Ludo/Jugador.h
 DadoResultado.h
 /Users/gabrielspranger/Desktop/POO II/Ludo/DadoResultado.h
+Tablero.h
+/Users/gabrielspranger/Desktop/POO II/Ludo/Tablero.h
+
+/Users/gabrielspranger/Desktop/POO II/Ludo/main.cpp
+iostream
+-
+string
+-
+unistd.h
+-
+Window.h
+/Users/gabrielspranger/Desktop/POO II/Ludo/Window.h
 
 /usr/local/Cellar/sfml/2.5.1/include/SFML/Config.hpp
 TargetConditionals.h
