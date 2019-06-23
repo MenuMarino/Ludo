@@ -1,7 +1,9 @@
 #ifndef LUDO_CASILLA_H
 #define LUDO_CASILLA_H
 
+#include <SFML/Graphics.hpp>
 #include <iostream>
+#include <vector>
 
 using namespace std;
 

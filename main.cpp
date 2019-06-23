@@ -42,28 +42,34 @@ int main() {
 
     if (num_jugadores == 2) {
 
-        Jugador j1("Jugador 1", 4, nullptr, YELLOW_INITIAL_X_POS, YELLOW_INITIAL_Y_POS);
-        Jugador j2("Jugador 2", 3, nullptr, GREEN_INITIAL_X_POS, GREEN_INITIAL_Y_POS);
+        Jugador* j1 = new Jugador("Jugador 1", 4);
+        Jugador* j2 = new Jugador("Jugador 2", 3);
 
-        ludo->openWindow(j1, j2);
+        vector<Jugador*> jugadores = {j1, j2};
+
+        ludo->openWindow(jugadores, num_jugadores);
 
 
     } else if (num_jugadores == 3) {
 
-        Jugador j1("Jugador 1", 4, nullptr, YELLOW_INITIAL_X_POS, YELLOW_INITIAL_Y_POS);
-        Jugador j2("Jugador 2", 3, nullptr, GREEN_INITIAL_X_POS, GREEN_INITIAL_Y_POS);
-        Jugador j3("Jugador 3", 1, nullptr, RED_INITIAL_X_POS, RED_INITIAL_Y_POS);
+        Jugador* j1 = new Jugador("Jugador 1", 4);
+        Jugador* j2 = new Jugador("Jugador 2", 3);
+        Jugador* j3 = new Jugador("Jugador 3", 1);
 
-        ludo->openWindow(j1, j2, j3);
+        vector<Jugador*> jugadores = {j1, j2, j3};
+
+        ludo->openWindow(jugadores, num_jugadores);
 
     } else if (num_jugadores == 4) {
 
-        Jugador j1("Jugador 1", 4, nullptr, YELLOW_INITIAL_X_POS, YELLOW_INITIAL_Y_POS);
-        Jugador j2("Jugador 2", 3, nullptr, GREEN_INITIAL_X_POS, GREEN_INITIAL_Y_POS);
-        Jugador j3("Jugador 3", 1, nullptr, RED_INITIAL_X_POS, RED_INITIAL_Y_POS);
-        Jugador j4("Jugador 4", 2, nullptr, BLUE_INITIAL_X_POS, BLUE_INITIAL_Y_POS);
+        Jugador* j1 = new Jugador("Jugador 1", 4);
+        Jugador* j2 = new Jugador("Jugador 2", 3);
+        Jugador* j3 = new Jugador("Jugador 3", 1);
+        Jugador* j4 = new Jugador("Jugador 4", 2);
 
-        ludo->openWindow(j1, j2, j3, j4);
+        vector<Jugador*> jugadores = {j1, j2, j3, j4};
+
+        ludo->openWindow(jugadores, num_jugadores);
 
     }
 

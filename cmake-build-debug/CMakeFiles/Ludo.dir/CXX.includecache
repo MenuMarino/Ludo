@@ -7,7 +7,11 @@
 #IncludeRegexTransform: 
 
 /Users/gabrielspranger/Desktop/POO II/Ludo/Casilla.h
+SFML/Graphics.hpp
+-
 iostream
+-
+vector
 -
 
 /Users/gabrielspranger/Desktop/POO II/Ludo/CasillaNormal.h
@@ -34,11 +38,31 @@ Dado.h
 Casilla.h
 /Users/gabrielspranger/Desktop/POO II/Ludo/Casilla.h
 
+/Users/gabrielspranger/Desktop/POO II/Ludo/Juego.cpp
+Juego.h
+/Users/gabrielspranger/Desktop/POO II/Ludo/Juego.h
+
+/Users/gabrielspranger/Desktop/POO II/Ludo/Juego.h
+iostream
+-
+vector
+-
+Dado.h
+/Users/gabrielspranger/Desktop/POO II/Ludo/Dado.h
+Jugador.h
 /Users/gabrielspranger/Desktop/POO II/Ludo/Jugador.h
 Ficha.h
 /Users/gabrielspranger/Desktop/POO II/Ludo/Ficha.h
-Dado.h
-/Users/gabrielspranger/Desktop/POO II/Ludo/Dado.h
+Tablero.h
+/Users/gabrielspranger/Desktop/POO II/Ludo/Tablero.h
+
+/Users/gabrielspranger/Desktop/POO II/Ludo/Jugador.cpp
+Jugador.h
+/Users/gabrielspranger/Desktop/POO II/Ludo/Jugador.h
+
+/Users/gabrielspranger/Desktop/POO II/Ludo/Jugador.h
+Ficha.h
+/Users/gabrielspranger/Desktop/POO II/Ludo/Ficha.h
 
 /Users/gabrielspranger/Desktop/POO II/Ludo/Tablero.h
 vector

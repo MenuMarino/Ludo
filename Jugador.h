@@ -2,33 +2,42 @@
 #define LUDO_JUGADOR_H
 
 #include "Ficha.h"
-#include "Dado.h"
+
+const int NUM_FICHAS = 4;
 
 class Jugador {
     string nombre;
     int color;
-    Ficha* ficha;
-    sf::CircleShape jugador;
+    vector<Ficha*> fichas;
+    int num_fichas = 4;
 public:
     Jugador() = default;
-    Jugador(const string& nombre, int color, Ficha* ficha, double initial_x_pos, double initial_y_pos): nombre{nombre}, color{color}, ficha{ficha} {
-        jugador.setRadius(20);
-        jugador.setPosition(sf::Vector2f(initial_x_pos, initial_y_pos));
-        jugador.setOutlineThickness(4);
-        jugador.setOutlineColor(sf::Color::Black);
+    Jugador(const string& nombre, int color): nombre{nombre}, color{color} {
 
         switch (color) {
             case 1:
-                jugador.setFillColor(sf::Color::Red);
+                fichas.emplace_back(new Ficha(839.1333-FICHA_RADIUS, 226.4-FICHA_RADIUS, 1));
+                fichas.emplace_back(new Ficha(905.6-FICHA_RADIUS, 301.8666-FICHA_RADIUS, 1));
+                fichas.emplace_back(new Ficha(981.0666-FICHA_RADIUS, 226.4-FICHA_RADIUS, 1));
+                fichas.emplace_back(new Ficha(905.6-FICHA_RADIUS, 150.9333-FICHA_RADIUS, 1));
                 break;
             case 2:
-                jugador.setFillColor(sf::Color::Blue);
+                fichas.emplace_back(new Ficha(905.6-FICHA_RADIUS, 839.1333-FICHA_RADIUS, 2));
+                fichas.emplace_back(new Ficha(981.066-FICHA_RADIUS, 905.6-FICHA_RADIUS, 2));
+                fichas.emplace_back(new Ficha(905.6-FICHA_RADIUS, 981.0666-FICHA_RADIUS, 2));
+                fichas.emplace_back(new Ficha(839.1333-FICHA_RADIUS, 905.6-FICHA_RADIUS, 2));
                 break;
             case 3:
-                jugador.setFillColor(sf::Color::Green);
+                fichas.emplace_back(new Ficha(226.4-FICHA_RADIUS, 301.8666-FICHA_RADIUS, 3));
+                fichas.emplace_back(new Ficha(150.9333-FICHA_RADIUS, 226.4-FICHA_RADIUS, 3));
+                fichas.emplace_back(new Ficha(226.4-FICHA_RADIUS, 150.9333-FICHA_RADIUS, 3));
+                fichas.emplace_back(new Ficha(301.8666-FICHA_RADIUS, 226.4-FICHA_RADIUS, 3));
                 break;
             case 4:
-                jugador.setFillColor(sf::Color::Yellow);
+                fichas.emplace_back(new Ficha(301.8666-FICHA_RADIUS, 905.6-FICHA_RADIUS, 4));
+                fichas.emplace_back(new Ficha(226.4-FICHA_RADIUS, 981.0666-FICHA_RADIUS, 4));
+                fichas.emplace_back(new Ficha(150.9333-FICHA_RADIUS, 905.6-FICHA_RADIUS, 4));
+                fichas.emplace_back(new Ficha(226.4-FICHA_RADIUS, 839.1333-FICHA_RADIUS, 4));
                 break;
             default:
                 break;
@@ -36,11 +45,18 @@ public:
 
     };
 
-    sf::Vector2f get_position() { return jugador.getPosition(); }
-    sf::CircleShape get_jugador() { return jugador; }
-    void move_to(double destX, double destY) { jugador.setPosition(sf::Vector2f(destX, destY)); }
+    void move_ficha_at(int i, double destX, double destY) { fichas[i]->move_to(destX, destY); }
+    Ficha get_ficha_at(int i) { return *(fichas[i]); }
+    sf::CircleShape get_ficha_sprite_at(int i) { return fichas[i]->get_ficha_sprite(); }
 
-    void jugar(Ficha* _ficha, Dado dado);
+    int get_num_fichas() { return num_fichas; }
+    void set_num_fichas(int _num_fichas) { num_fichas = _num_fichas; }
+
+    ~Jugador() {
+        for (auto& ficha: fichas)
+            delete ficha;
+    }
+
 };
 
 
