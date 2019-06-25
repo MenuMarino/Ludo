@@ -3,8 +3,6 @@
 
 #include "Ficha.h"
 
-const int NUM_FICHAS = 4;
-
 class Jugador {
     string nombre;
     int color;
@@ -13,7 +11,6 @@ class Jugador {
 public:
     Jugador() = default;
     Jugador(const string& nombre, int color): nombre{nombre}, color{color} {
-        // de acuerdo al color, las 4 fichas se ponen en la casa correspondiente
         switch (color) {
             case 1:
                 fichas.emplace_back(new Ficha(839.1333-FICHA_RADIUS, 226.4-FICHA_RADIUS, 1));
@@ -51,6 +48,58 @@ public:
 
     int get_num_fichas() { return num_fichas; }
     void set_num_fichas(int _num_fichas) { num_fichas = _num_fichas; }
+
+    double get_corner_x() {
+        switch (color) {
+            case 1:
+                return 1060.0;
+            case 2:
+                return 1060.0;
+            case 3:
+                return 60.0;
+            case 4:
+                return 60.0;
+        }
+    }
+
+    double get_corner_y() {
+        switch (color) {
+            case 1:
+                return 40.0;
+            case 2:
+                return 1070.0;
+            case 3:
+                return 40.0;
+            case 4:
+                return 1070.0;
+        }
+    }
+
+    double get_turno_text_x() {
+        switch (color) {
+            case 1:
+                return 690.0;
+            case 2:
+                return 690.0;
+            case 3:
+                return 300.0;
+            case 4:
+                return 300.0;
+        }
+    }
+
+    double get_turno_text_y() {
+        switch (color) {
+            case 1:
+                return 40.0;
+            case 2:
+                return 1070.0;
+            case 3:
+                return 40.0;
+            case 4:
+                return 1070.0;
+        }
+    }
 
     ~Jugador() {
         for (auto& ficha: fichas)

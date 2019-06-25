@@ -12,18 +12,6 @@
 #include "DadoResultado.h"
 #include "Tablero.h"
 
-const int YELLOW_CORNER_X = 60;
-const int YELLOW_CORNER_Y = 1040;
-
-const int GREEN_CORNER_X = 60;
-const int GREEN_CORNER_Y = 60;
-
-const int RED_CORNER_X = 1060;
-const int RED_CORNER_Y = 60;
-
-const int BLUE_CORNER_X = 1060;
-const int BLUE_CORNER_Y = 1040;
-
 const int JUGADOR_RADIUS = 20;
 
 class Window {
@@ -37,6 +25,8 @@ class Window {
     DadoResultado dado_resultado;
     int num_movimientos = 0;
     Tablero tablero;
+    sf::Text turno_text;
+    sf::Font turno_text_font;
 public:
 
     /// Coordenadas Importantes Amarillo
@@ -69,8 +59,9 @@ public:
 
     Window() = default;
     explicit Window(const std::string& WindowName);
-    void openWindow(vector<Jugador*>& jugadores, const int& num_jugadores);
-
+    void openWindow(vector<Jugador*>& _jugadores, const int& num_jugadores);
+    void waitSeconds(float time);
+    void updateWindow(const sf::Sprite& background, const sf::Text& dado_result, const sf::Text& turno, const vector<Jugador*>& jugadores, const int& num_jugadores);
     ~Window() {
         for (auto& jugador: jugadores)
             delete jugador;

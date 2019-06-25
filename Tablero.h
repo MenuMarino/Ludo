@@ -1,7 +1,7 @@
 #ifndef LUDO_TABLERO_H
 #define LUDO_TABLERO_H
 
-#include <vector>
+#include <thread>
 #include "Casilla.h"
 #include "CasillaNormal.h"
 
@@ -55,6 +55,17 @@ public:
     double get_recta_final_azul_x_at(int i) { return recta_final_azul[i]->get_x(); }
     double get_recta_final_azul_y_at(int i) { return recta_final_azul[i]->get_y(); }
     int get_recta_final_azul_size() { return recta_final_azul_size; }
+
+    /// Creacion de Casillas Normales
+    void crear_primera_mitad();
+    void crear_segunda_mitad();
+
+    /// Creacion casillas recta final
+    void crear_recta_final_verde_amarilla();
+    void crear_recta_final_rojo_azul();
+
+    /// Creacion casillas casa
+    void crear_casas();
 
     ~Tablero();
 };

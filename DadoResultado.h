@@ -8,7 +8,7 @@
 #include <SFML/Graphics.hpp>
 #include "Dado.h"
 
-const int TEXT_SIZE = 40;
+const int TEXT_SIZE = 25;
 
 class DadoResultado {
 

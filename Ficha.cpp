@@ -36,10 +36,8 @@ Ficha::Ficha(double x, double y, int color) {
 
 void Ficha::move_to(double _x, double _y) {
     ficha_sprite.setPosition(_x, _y);
-}
-
-void Ficha::mover(Casilla* casilla, char tipo_de_casilla) {
-
+    x = _x;
+    y = _y;
 }
 
 

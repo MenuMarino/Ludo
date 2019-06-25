@@ -10,17 +10,17 @@
 
 using namespace std;
 
-const double YELLOW_INITIAL_X_POS = 490.5332-20;
-const double YELLOW_INITIAL_Y_POS = 1018.7991-20;
+const double YELLOW_INITIAL_X_POS = 490.5332-FICHA_RADIUS;
+const double YELLOW_INITIAL_Y_POS = 1018.7991-FICHA_RADIUS;
 
-const double GREEN_INITIAL_X_POS = 113.1999-20;
-const double GREEN_INITIAL_Y_POS = 490.5332-20;
+const double GREEN_INITIAL_X_POS = 113.1999-FICHA_RADIUS;
+const double GREEN_INITIAL_Y_POS = 490.5332-FICHA_RADIUS;
 
-const double RED_INITIAL_X_POS = 641.4665-20;
-const double RED_INITIAL_Y_POS = 113.1999-20;
+const double RED_INITIAL_X_POS = 641.4665-FICHA_RADIUS;
+const double RED_INITIAL_Y_POS = 113.1999-FICHA_RADIUS;
 
-const double BLUE_INITIAL_X_POS = 1018.7991-20;
-const double BLUE_INITIAL_Y_POS = 641.4665-20;
+const double BLUE_INITIAL_X_POS = 1018.7991-FICHA_RADIUS;
+const double BLUE_INITIAL_Y_POS = 641.4665-FICHA_RADIUS;
 
 int preguntar_jugadores(int& num_jugadores) {
     cout << "¡BIENVENIDO A LUDO!" << endl;

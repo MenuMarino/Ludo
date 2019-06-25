@@ -9,7 +9,7 @@
 
 class CasillaDestino: public Casilla {
 public:
-    CasillaDestino(int color);
+    explicit CasillaDestino(int color);
 };
 
 

@@ -10,12 +10,11 @@ class Ficha {
     double x;
     double y;
     char estado;
+    int ficha_a_sacar = 0;
     sf::CircleShape ficha_sprite;
 public:
 
     Ficha(double x, double y, int color);
-    // metodo posiblemente innecesario
-    void mover(Casilla* casilla, char tipo_de_casilla); // se necesita el tipo de casilla para hacerle un dynamic_cast al parametro 'Casilla'
 
     double get_x() { return x; }
     double get_y() { return y; }

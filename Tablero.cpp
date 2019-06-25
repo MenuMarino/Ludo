@@ -1,8 +1,6 @@
 #include "Tablero.h"
 
-Tablero::Tablero() {
-    // TODO: Hacer esto con hilos
-    /// Casillas Normales
+void Tablero::crear_primera_mitad() {
     casillas.emplace_back(new Casilla(490.5332, 1094.2657, 0)); // casilla 0
     casillas.emplace_back(new Casilla(490.5332, 1018.7991, 4)); // comienzo amarillo
     casillas.emplace_back(new Casilla(490.5332, 943.3325, 0));
@@ -35,7 +33,9 @@ Tablero::Tablero() {
 
     casillas.emplace_back(new Casilla(565.9998, 37.7333, 0));
     casillas.emplace_back(new Casilla(641.4665, 37.7333, 0)); // esquina
+}
 
+void Tablero::crear_segunda_mitad() {
     casillas.emplace_back(new Casilla(641.4665, 113.1999, 1)); // comienzo rojo
     casillas.emplace_back(new Casilla(641.4665, 188.6666, 0));
     casillas.emplace_back(new Casilla(641.4665, 264.1333, 0));
@@ -67,7 +67,9 @@ Tablero::Tablero() {
     casillas.emplace_back(new Casilla(641.4665, 1094.2657, 0)); // esquina
 
     casillas.emplace_back(new Casilla(565.9998, 1094.2657, 0)); // casilla n
+}
 
+void Tablero::crear_recta_final_verde_amarilla() {
     /// Casillas Recta Final Amarillo
     recta_final_amarillo.emplace_back(new Casilla(565.9998, 1018.7991, 4)); // primera casilla segura amarilla
     recta_final_amarillo.emplace_back(new Casilla(565.9998, 943.3325, 4));
@@ -83,7 +85,9 @@ Tablero::Tablero() {
     recta_final_verde.emplace_back(new Casilla(339.5999, 565.9998, 3));
     recta_final_verde.emplace_back(new Casilla(415.0666, 565.9998, 3));
     recta_final_verde.emplace_back(new Casilla(490.5332, 565.9998, 3)); // casilla destino verde
+}
 
+void Tablero::crear_recta_final_rojo_azul() {
     /// Casillas Recta Final Rojo
     recta_final_rojo.emplace_back(new Casilla(565.9998, 113.1999, 1)); // primera casilla segura rojo
     recta_final_rojo.emplace_back(new Casilla(565.9998, 188.6666, 1));
@@ -99,7 +103,9 @@ Tablero::Tablero() {
     recta_final_azul.emplace_back(new Casilla(792.3993, 565.9998, 2));
     recta_final_azul.emplace_back(new Casilla(716.9327, 565.9998, 2));
     recta_final_azul.emplace_back(new Casilla(641.4665, 565.9998, 2)); // casilla destino azul
+}
 
+void Tablero::crear_casas() {
     /// Casillas Casa Amarillo
     casas_amarillas.emplace_back(new Casilla(150.9333, 905.6, 4)); // izquierdo
     casas_amarillas.emplace_back(new Casilla(226.4, 839.1333, 4)); // arriba
@@ -123,6 +129,27 @@ Tablero::Tablero() {
     casas_azules.emplace_back(new Casilla(905.6, 839.1333, 2)); // arriba
     casas_azules.emplace_back(new Casilla(905.6, 981.0666, 2)); // abajo
     casas_azules.emplace_back(new Casilla(981.0666, 905.6, 2)); // derecha
+}
+
+Tablero::Tablero() {
+
+//    thread t1(&Tablero::crear_primera_mitad, this);
+//    thread t2(&Tablero::crear_segunda_mitad, this);
+//    thread t3(&Tablero::crear_recta_final_verde_amarilla, this);
+//    thread t4(&Tablero::crear_recta_final_rojo_azul, this);
+//    thread t5(&Tablero::crear_casas, this);
+//
+//    t1.join();
+//    t2.join();
+//    t3.join();
+//    t4.join();
+//    t5.join();
+
+    crear_primera_mitad();
+    crear_segunda_mitad();
+    crear_recta_final_verde_amarilla();
+    crear_recta_final_rojo_azul();
+    crear_casas();
 
     casillas_size = casillas.size();
     recta_final_amarillo_size = recta_final_amarillo.size();
@@ -152,5 +179,12 @@ Tablero::~Tablero() {
     for (auto& item: casas_azules)
         delete item;
 }
+
+
+
+
+
+
+
 
 
