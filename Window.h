@@ -12,8 +12,6 @@
 #include "DadoResultado.h"
 #include "Tablero.h"
 
-const int JUGADOR_RADIUS = 20;
-
 class Window {
     const int WINDOW_WIDTH = 1132;
     const int WINDOW_HEIGHT = 1132;

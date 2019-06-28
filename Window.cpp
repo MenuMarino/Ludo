@@ -19,11 +19,6 @@ Window::Window(const std::string& WindowName) {
     turno_text.setPosition(0, 0);
 }
 
-void Window::waitSeconds(float time) {
-    sf::Time delay = sf::seconds(time);
-    sf::sleep(delay);
-}
-
 void Window::updateWindow(const sf::Sprite& background, const sf::Text& dado_result, const sf::Text& turno, const vector<Jugador*>& jugadores, const int& num_jugadores) {
     window.clear();
     window.draw(sprite);
@@ -42,10 +37,6 @@ void Window::updateWindow(const sf::Sprite& background, const sf::Text& dado_res
 void Window::openWindow(vector<Jugador*>& _jugadores, const int& num_jugadores) {
     this->jugadores = _jugadores;
     int turno = 0;
-    int ficha_amarilla_a_sacar_de_casa = 0;
-    int ficha_verde_a_sacar_de_casa = 0;
-    int ficha_rojo_a_sacar_de_casa = 0;
-    int ficha_azul_a_sacar_de_casa = 0;
     bool in_safe_zone = false;
     while (window.isOpen()) {
         updateWindow(sprite, dado_resultado.get_dado_resultado(), turno_text, jugadores, num_jugadores);
@@ -54,25 +45,35 @@ void Window::openWindow(vector<Jugador*>& _jugadores, const int& num_jugadores) 
             if (event.type == sf::Event::Closed)
                 window.close();
             if (event.type == sf::Event::MouseButtonReleased) {
-                sf::Vector2f clickCoordinate = window.mapPixelToCoords(sf::Mouse::getPosition(window)); // get click coordinates
+                sf::Vector2f clickCoordinate = window.mapPixelToCoords(sf::Mouse::getPosition(window));
 
-                sf::FloatRect bounds = dado.get_dado().getGlobalBounds(); // get global bounds of the dado image
+                sf::FloatRect bounds = dado.get_dado().getGlobalBounds();
 
-                if (bounds.contains(clickCoordinate)) { // check if click is within the global bounds of dado
+                if (bounds.contains(clickCoordinate)) { /// clicked on dado
                     num_movimientos = dado.lanzar();
                     dado_resultado.set_text(num_movimientos);
                     updateWindow(sprite, dado_resultado.get_dado_resultado(), turno_text, jugadores, num_jugadores);
                     if (turno == 0) {
-
+                        dado_resultado.set_position(jugadores[0]->get_corner_x(), jugadores[0]->get_corner_y());
+                        if (num_movimientos == 6) {
+                            jugadores[0]->move_ficha_from_casa();
+                        }
                     } else if (turno == 1) {
                         dado_resultado.set_position(jugadores[1]->get_corner_x(), jugadores[1]->get_corner_y());
-//                        updateWindow(sprite, dado_resultado.get_dado_resultado(), turno_text, jugadores, num_jugadores);
+
+                        if (num_movimientos == 6) {
+                            jugadores[1]->move_ficha_from_casa();
+                        }
                     } else if (turno == 2) {
                         dado_resultado.set_position(jugadores[2]->get_corner_x(), jugadores[2]->get_corner_y());
-//                        updateWindow(sprite, dado_resultado.get_dado_resultado(), turno_text, jugadores, num_jugadores);
+                        if (num_movimientos == 6) {
+                            jugadores[2]->move_ficha_from_casa();
+                        }
                     } else if (turno == 3) {
                         dado_resultado.set_position(jugadores[3]->get_corner_x(), jugadores[3]->get_corner_y());
-//                        updateWindow(sprite, dado_resultado.get_dado_resultado(), turno_text, jugadores, num_jugadores);
+                        if (num_movimientos == 6) {
+                            jugadores[3]->move_ficha_from_casa();
+                        }
                         turno = -1;
                     }
                     updateWindow(sprite, dado_resultado.get_dado_resultado(), turno_text, jugadores, num_jugadores);
@@ -84,28 +85,12 @@ void Window::openWindow(vector<Jugador*>& _jugadores, const int& num_jugadores) 
 
         if (turno == 0) {
             turno_text.setPosition(jugadores[turno]->get_turno_text_x(), jugadores[turno]->get_turno_text_y());
-            dado_resultado.set_position(jugadores[0]->get_corner_x(), jugadores[0]->get_corner_y());
-            if (num_movimientos == 6 && ficha_amarilla_a_sacar_de_casa != 4) {
-                jugadores[0]->move_ficha_at(ficha_amarilla_a_sacar_de_casa, 490.5332-JUGADOR_RADIUS, 1018.7991-JUGADOR_RADIUS);
-            }
         } else if (turno == 1) {
             turno_text.setPosition(jugadores[turno]->get_turno_text_x(), jugadores[turno]->get_turno_text_y());
-            dado_resultado.set_position(jugadores[1]->get_corner_x(), jugadores[1]->get_corner_y());
-            if (num_movimientos == 6 && ficha_verde_a_sacar_de_casa != 4) {
-                jugadores[1]->move_ficha_at(ficha_verde_a_sacar_de_casa, 113.1999-JUGADOR_RADIUS, 490.5332-JUGADOR_RADIUS);
-            }
         } else if (turno == 2) {
             turno_text.setPosition(jugadores[turno]->get_turno_text_x(), jugadores[turno]->get_turno_text_y());
-            dado_resultado.set_position(jugadores[2]->get_corner_x(), jugadores[2]->get_corner_y());
-            if (num_movimientos == 6 && ficha_azul_a_sacar_de_casa != 4) {
-                jugadores[2]->move_ficha_at(ficha_azul_a_sacar_de_casa, 641.4665-JUGADOR_RADIUS, 113.1999-JUGADOR_RADIUS);
-            }
         } else if (turno == 3) {
             turno_text.setPosition(jugadores[turno]->get_turno_text_x(), jugadores[turno]->get_turno_text_y());
-            dado_resultado.set_position(jugadores[3]->get_corner_x(), jugadores[3]->get_corner_y());
-            if (num_movimientos == 6 && ficha_rojo_a_sacar_de_casa != 4) {
-                jugadores[3]->move_ficha_at(ficha_rojo_a_sacar_de_casa, 1018.7991-JUGADOR_RADIUS, 641.4665-JUGADOR_RADIUS);
-            }
         }
 
         updateWindow(sprite, dado_resultado.get_dado_resultado(), turno_text, jugadores, num_jugadores);

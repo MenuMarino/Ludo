@@ -2,8 +2,15 @@
 #define LUDO_JUGADOR_H
 
 #include "Ficha.h"
+#include "Tablero.h"
 
 class Jugador {
+    Tablero tablero;
+    int ficha_a_sacar_de_casa_roja = 0;
+    int ficha_a_sacar_de_casa_azul = 0;
+    int ficha_a_sacar_de_casa_verde = 0;
+    int ficha_a_sacar_de_casa_amarilla = 0;
+    int current_ficha = 0;
     string nombre;
     int color;
     vector<Ficha*> fichas;
@@ -42,7 +49,41 @@ public:
 
     };
 
-    void move_ficha_at(int i, double destX, double destY) { fichas[i]->move_to(destX, destY); }
+    void move_ficha_to(Casilla* casilla) {
+        fichas[current_ficha]->move_to(casilla);
+    }
+
+    void move_ficha_from_casa() {
+        switch (color) {
+            case 1:
+                if (ficha_a_sacar_de_casa_roja != 4 && fichas[ficha_a_sacar_de_casa_roja]->get_estado() == 'C') {
+                    fichas[ficha_a_sacar_de_casa_roja]->move_to(tablero.get_casilla_at(27));
+                    ++ficha_a_sacar_de_casa_roja;
+                }
+                break;
+            case 2:
+                if (ficha_a_sacar_de_casa_azul != 4 && fichas[ficha_a_sacar_de_casa_azul]->get_estado() == 'C') {
+                    fichas[ficha_a_sacar_de_casa_azul]->move_to(tablero.get_casilla_at(41));
+                    ++ficha_a_sacar_de_casa_azul;
+                }
+                break;
+            case 3:
+                if (ficha_a_sacar_de_casa_verde != 4 && fichas[ficha_a_sacar_de_casa_verde]->get_estado() == 'C') {
+                    fichas[ficha_a_sacar_de_casa_verde]->move_to(tablero.get_casilla_at(14));
+                    ++ficha_a_sacar_de_casa_verde;
+                }
+                break;
+            case 4:
+                if (ficha_a_sacar_de_casa_amarilla != 4 && fichas[ficha_a_sacar_de_casa_amarilla]->get_estado() == 'C') {
+                    fichas[ficha_a_sacar_de_casa_amarilla]->move_to(tablero.get_casilla_at(1));
+                    ++ficha_a_sacar_de_casa_amarilla;
+                }
+                break;
+        }
+    }
+
+    void set_current_ficha(int i) { current_ficha = i; }
+
     Ficha get_ficha_at(int i) { return *(fichas[i]); }
     sf::CircleShape get_ficha_sprite_at(int i) { return fichas[i]->get_ficha_sprite(); }
 

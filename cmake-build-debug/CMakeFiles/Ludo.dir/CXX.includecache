@@ -14,7 +14,43 @@ iostream
 vector
 -
 
+/Users/gabrielspranger/Desktop/POO II/Ludo/CasillaCasa.cpp
+CasillaCasa.h
+/Users/gabrielspranger/Desktop/POO II/Ludo/CasillaCasa.h
+
+/Users/gabrielspranger/Desktop/POO II/Ludo/CasillaCasa.h
+Casilla.h
+/Users/gabrielspranger/Desktop/POO II/Ludo/Casilla.h
+
+/Users/gabrielspranger/Desktop/POO II/Ludo/CasillaComienzo.cpp
+CasillaComienzo.h
+/Users/gabrielspranger/Desktop/POO II/Ludo/CasillaComienzo.h
+
+/Users/gabrielspranger/Desktop/POO II/Ludo/CasillaComienzo.h
+Casilla.h
+/Users/gabrielspranger/Desktop/POO II/Ludo/Casilla.h
+
+/Users/gabrielspranger/Desktop/POO II/Ludo/CasillaDestino.cpp
+CasillaDestino.h
+/Users/gabrielspranger/Desktop/POO II/Ludo/CasillaDestino.h
+
+/Users/gabrielspranger/Desktop/POO II/Ludo/CasillaDestino.h
+Casilla.h
+/Users/gabrielspranger/Desktop/POO II/Ludo/Casilla.h
+
+/Users/gabrielspranger/Desktop/POO II/Ludo/CasillaNormal.cpp
+CasillaNormal.h
 /Users/gabrielspranger/Desktop/POO II/Ludo/CasillaNormal.h
+
+/Users/gabrielspranger/Desktop/POO II/Ludo/CasillaNormal.h
+Casilla.h
+/Users/gabrielspranger/Desktop/POO II/Ludo/Casilla.h
+
+/Users/gabrielspranger/Desktop/POO II/Ludo/CasillaSegura.cpp
+CasillaSegura.h
+/Users/gabrielspranger/Desktop/POO II/Ludo/CasillaSegura.h
+
+/Users/gabrielspranger/Desktop/POO II/Ludo/CasillaSegura.h
 Casilla.h
 /Users/gabrielspranger/Desktop/POO II/Ludo/Casilla.h
 
@@ -34,17 +70,47 @@ SFML/Graphics.hpp
 Dado.h
 /Users/gabrielspranger/Desktop/POO II/Ludo/Dado.h
 
+/Users/gabrielspranger/Desktop/POO II/Ludo/Ficha.cpp
+Ficha.h
+/Users/gabrielspranger/Desktop/POO II/Ludo/Ficha.h
+
 /Users/gabrielspranger/Desktop/POO II/Ludo/Ficha.h
 Casilla.h
 /Users/gabrielspranger/Desktop/POO II/Ludo/Casilla.h
 
+/Users/gabrielspranger/Desktop/POO II/Ludo/Juego.cpp
+Juego.h
+/Users/gabrielspranger/Desktop/POO II/Ludo/Juego.h
+
+/Users/gabrielspranger/Desktop/POO II/Ludo/Juego.h
+iostream
+-
+vector
+-
+Dado.h
+/Users/gabrielspranger/Desktop/POO II/Ludo/Dado.h
+Jugador.h
 /Users/gabrielspranger/Desktop/POO II/Ludo/Jugador.h
 Ficha.h
 /Users/gabrielspranger/Desktop/POO II/Ludo/Ficha.h
+Tablero.h
+/Users/gabrielspranger/Desktop/POO II/Ludo/Tablero.h
+
+/Users/gabrielspranger/Desktop/POO II/Ludo/Jugador.cpp
+Jugador.h
+/Users/gabrielspranger/Desktop/POO II/Ludo/Jugador.h
+
+/Users/gabrielspranger/Desktop/POO II/Ludo/Jugador.h
+Ficha.h
+/Users/gabrielspranger/Desktop/POO II/Ludo/Ficha.h
+Tablero.h
+/Users/gabrielspranger/Desktop/POO II/Ludo/Tablero.h
+
+/Users/gabrielspranger/Desktop/POO II/Ludo/Tablero.cpp
+Tablero.h
+/Users/gabrielspranger/Desktop/POO II/Ludo/Tablero.h
 
 /Users/gabrielspranger/Desktop/POO II/Ludo/Tablero.h
-thread
--
 Casilla.h
 /Users/gabrielspranger/Desktop/POO II/Ludo/Casilla.h
 CasillaNormal.h
@@ -67,6 +133,16 @@ DadoResultado.h
 /Users/gabrielspranger/Desktop/POO II/Ludo/DadoResultado.h
 Tablero.h
 /Users/gabrielspranger/Desktop/POO II/Ludo/Tablero.h
+
+/Users/gabrielspranger/Desktop/POO II/Ludo/main.cpp
+iostream
+-
+string
+-
+unistd.h
+-
+Window.h
+/Users/gabrielspranger/Desktop/POO II/Ludo/Window.h
 
 /usr/local/Cellar/sfml/2.5.1/include/SFML/Config.hpp
 TargetConditionals.h

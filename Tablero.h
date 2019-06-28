@@ -1,7 +1,7 @@
 #ifndef LUDO_TABLERO_H
 #define LUDO_TABLERO_H
 
-#include <thread>
+//#include <thread>
 #include "Casilla.h"
 #include "CasillaNormal.h"
 
@@ -28,6 +28,7 @@ public:
 
     /// Casillas Normales
     vector<Casilla*> get_casillas() { return casillas; }
+    Casilla* get_casilla_at(int i) { return casillas[i]; }
     double get_casilla_x_at(int i) { return casillas[i]->get_x(); }
     double get_casilla_y_at(int i) { return casillas[i]->get_y(); }
     int get_casilla_size() { return casillas_size; }

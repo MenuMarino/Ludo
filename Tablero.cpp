@@ -2,7 +2,7 @@
 
 void Tablero::crear_primera_mitad() {
     casillas.emplace_back(new Casilla(490.5332, 1094.2657, 0)); // casilla 0
-    casillas.emplace_back(new Casilla(490.5332, 1018.7991, 4)); // comienzo amarillo
+    casillas.emplace_back(new Casilla(490.5332, 1018.7991, 4)); // comienzo amarillo i = 1
     casillas.emplace_back(new Casilla(490.5332, 943.3325, 0));
     casillas.emplace_back(new Casilla(490.5332, 867.8659, 0));
     casillas.emplace_back(new Casilla(490.5332, 792.3993, 0));
@@ -18,7 +18,7 @@ void Tablero::crear_primera_mitad() {
     casillas.emplace_back(new Casilla(37.73333, 565.9998, 0)); // ultima casilla normal verde
     casillas.emplace_back(new Casilla(37.73333, 490.5332, 0)); // esquina
 
-    casillas.emplace_back(new Casilla(113.1999, 490.5332, 3)); // comienzo verde
+    casillas.emplace_back(new Casilla(113.1999, 490.5332, 3)); // comienzo verde i = 14
     casillas.emplace_back(new Casilla(188.6666, 490.5332, 0));
     casillas.emplace_back(new Casilla(264.1333, 490.5332, 0));
     casillas.emplace_back(new Casilla(339.5999, 490.5332, 0));
@@ -36,7 +36,7 @@ void Tablero::crear_primera_mitad() {
 }
 
 void Tablero::crear_segunda_mitad() {
-    casillas.emplace_back(new Casilla(641.4665, 113.1999, 1)); // comienzo rojo
+    casillas.emplace_back(new Casilla(641.4665, 113.1999, 1)); // comienzo rojo i = 27
     casillas.emplace_back(new Casilla(641.4665, 188.6666, 0));
     casillas.emplace_back(new Casilla(641.4665, 264.1333, 0));
     casillas.emplace_back(new Casilla(641.4665, 339.5999, 0));
@@ -53,7 +53,7 @@ void Tablero::crear_segunda_mitad() {
     casillas.emplace_back(new Casilla(1094.2657, 565.9998, 0));
     casillas.emplace_back(new Casilla(1094.2657, 641.4665, 0)); // esquina
 
-    casillas.emplace_back(new Casilla(1018.7991, 641.4665, 2)); // comienzo azul
+    casillas.emplace_back(new Casilla(1018.7991, 641.4665, 2)); // comienzo azul i = 41
     casillas.emplace_back(new Casilla(943.3325, 641.4665, 0));
     casillas.emplace_back(new Casilla(867.8659, 641.4665, 0));
     casillas.emplace_back(new Casilla(792.3993, 641.4665, 0));

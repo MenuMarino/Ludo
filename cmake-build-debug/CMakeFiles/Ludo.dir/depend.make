@@ -553,9 +553,11 @@ CMakeFiles/Ludo.dir/Juego.cpp.o: /usr/local/Cellar/sfml/2.5.1/include/SFML/Windo
 CMakeFiles/Ludo.dir/Juego.cpp.o: /usr/local/Cellar/sfml/2.5.1/include/SFML/Window/WindowStyle.hpp
 
 CMakeFiles/Ludo.dir/Jugador.cpp.o: ../Casilla.h
+CMakeFiles/Ludo.dir/Jugador.cpp.o: ../CasillaNormal.h
 CMakeFiles/Ludo.dir/Jugador.cpp.o: ../Ficha.h
 CMakeFiles/Ludo.dir/Jugador.cpp.o: ../Jugador.cpp
 CMakeFiles/Ludo.dir/Jugador.cpp.o: ../Jugador.h
+CMakeFiles/Ludo.dir/Jugador.cpp.o: ../Tablero.h
 CMakeFiles/Ludo.dir/Jugador.cpp.o: /usr/local/Cellar/sfml/2.5.1/include/SFML/Config.hpp
 CMakeFiles/Ludo.dir/Jugador.cpp.o: /usr/local/Cellar/sfml/2.5.1/include/SFML/Graphics.hpp
 CMakeFiles/Ludo.dir/Jugador.cpp.o: /usr/local/Cellar/sfml/2.5.1/include/SFML/Graphics/BlendMode.hpp

@@ -34,10 +34,20 @@ Ficha::Ficha(double x, double y, int color) {
     ficha_sprite.setPosition(x, y);
 }
 
-void Ficha::move_to(double _x, double _y) {
-    ficha_sprite.setPosition(_x, _y);
-    x = _x;
-    y = _y;
+void Ficha::move_to(Casilla* casilla) {
+
+    if (!casilla->get_is_taken()) {
+        double _x = casilla->get_x() - FICHA_RADIUS;
+        double _y = casilla->get_y() - FICHA_RADIUS;
+
+        ficha_sprite.setPosition(_x, _y);
+        x = _x;
+        y = _y;
+
+        casilla->set_is_taken(true);
+    } else {
+        // pierde turno
+    }
 }
 
 

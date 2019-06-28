@@ -554,9 +554,11 @@ CMakeFiles/Ludo.dir/Juego.cpp.o
  /usr/local/Cellar/sfml/2.5.1/include/SFML/Window/WindowStyle.hpp
 CMakeFiles/Ludo.dir/Jugador.cpp.o
  /Users/gabrielspranger/Desktop/POO II/Ludo/Casilla.h
+ /Users/gabrielspranger/Desktop/POO II/Ludo/CasillaNormal.h
  /Users/gabrielspranger/Desktop/POO II/Ludo/Ficha.h
  /Users/gabrielspranger/Desktop/POO II/Ludo/Jugador.cpp
  /Users/gabrielspranger/Desktop/POO II/Ludo/Jugador.h
+ /Users/gabrielspranger/Desktop/POO II/Ludo/Tablero.h
  /usr/local/Cellar/sfml/2.5.1/include/SFML/Config.hpp
  /usr/local/Cellar/sfml/2.5.1/include/SFML/Graphics.hpp
  /usr/local/Cellar/sfml/2.5.1/include/SFML/Graphics/BlendMode.hpp

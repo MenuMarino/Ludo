@@ -23,7 +23,7 @@ public:
 
     void set_estado(char _estado) { estado = _estado; }
 
-    void move_to(double _x, double _y);
+    void move_to(Casilla* casilla);
     sf::CircleShape get_ficha_sprite() { return ficha_sprite; }
 };
 
