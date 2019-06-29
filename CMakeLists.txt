@@ -3,9 +3,9 @@ project(Ludo)
 
 set(CMAKE_CXX_STANDARD 14)
 
-set(SFML_INCLUDE_DIR "/usr/local/Cellar/sfml/2.5.1/include/SFML")
-set(SFML_LIBRARY_DIR "/usr/local/Cellar/sfml/2.5.1/lib")
-set(SFML_DIR "/usr/local/Cellar/sfml/2.5.1/lib/cmake/SFML")
+set(SFML_INCLUDE_DIR "/home/rodrigo/Desktop/SFML-2.5.1/include/SFML")
+set(SFML_LIBRARY_DIR "/home/rodrigo/Desktop/SFML-2.5.1/lib")
+set(SFML_DIR "/home/rodrigo/Desktop/SFML-2.5.1/lib/cmake/SFML")
 
 link_directories(SFML_LIBRARY_DIR)
 include_directories(SFML_INCLUDE_DIR)
