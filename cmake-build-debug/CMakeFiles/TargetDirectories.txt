@@ -1,3 +1,9 @@
+<<<<<<< HEAD
 /Users/benjamindiaz/CLionProjects/Ludo/cmake-build-debug/CMakeFiles/rebuild_cache.dir
 /Users/benjamindiaz/CLionProjects/Ludo/cmake-build-debug/CMakeFiles/edit_cache.dir
 /Users/benjamindiaz/CLionProjects/Ludo/cmake-build-debug/CMakeFiles/Ludo.dir
+=======
+/Users/gabrielspranger/Desktop/Ludo/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/gabrielspranger/Desktop/Ludo/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/gabrielspranger/Desktop/Ludo/cmake-build-debug/CMakeFiles/Ludo.dir
+>>>>>>> 084e9f2462e7bb1163d816394ec92f8b51968d48

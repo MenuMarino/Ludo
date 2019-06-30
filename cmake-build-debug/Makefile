@@ -48,10 +48,17 @@ RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
+<<<<<<< HEAD
 CMAKE_SOURCE_DIR = /Users/benjamindiaz/CLionProjects/Ludo
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /Users/benjamindiaz/CLionProjects/Ludo/cmake-build-debug
+=======
+CMAKE_SOURCE_DIR = /Users/gabrielspranger/Desktop/Ludo
+
+# The top-level build directory on which CMake was run.
+CMAKE_BINARY_DIR = /Users/gabrielspranger/Desktop/Ludo/cmake-build-debug
+>>>>>>> 084e9f2462e7bb1163d816394ec92f8b51968d48
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +87,15 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
+<<<<<<< HEAD
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/benjamindiaz/CLionProjects/Ludo/cmake-build-debug/CMakeFiles /Users/benjamindiaz/CLionProjects/Ludo/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/benjamindiaz/CLionProjects/Ludo/cmake-build-debug/CMakeFiles 0
+=======
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gabrielspranger/Desktop/Ludo/cmake-build-debug/CMakeFiles /Users/gabrielspranger/Desktop/Ludo/cmake-build-debug/CMakeFiles/progress.marks
+	$(MAKE) -f CMakeFiles/Makefile2 all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gabrielspranger/Desktop/Ludo/cmake-build-debug/CMakeFiles 0
+>>>>>>> 084e9f2462e7bb1163d816394ec92f8b51968d48
 .PHONY : all
 
 # The main clean target
@@ -122,141 +135,6 @@ Ludo: cmake_check_build_system
 Ludo/fast:
 	$(MAKE) -f CMakeFiles/Ludo.dir/build.make CMakeFiles/Ludo.dir/build
 .PHONY : Ludo/fast
-
-CasillaCasa.o: CasillaCasa.cpp.o
-
-.PHONY : CasillaCasa.o
-
-# target to build an object file
-CasillaCasa.cpp.o:
-	$(MAKE) -f CMakeFiles/Ludo.dir/build.make CMakeFiles/Ludo.dir/CasillaCasa.cpp.o
-.PHONY : CasillaCasa.cpp.o
-
-CasillaCasa.i: CasillaCasa.cpp.i
-
-.PHONY : CasillaCasa.i
-
-# target to preprocess a source file
-CasillaCasa.cpp.i:
-	$(MAKE) -f CMakeFiles/Ludo.dir/build.make CMakeFiles/Ludo.dir/CasillaCasa.cpp.i
-.PHONY : CasillaCasa.cpp.i
-
-CasillaCasa.s: CasillaCasa.cpp.s
-
-.PHONY : CasillaCasa.s
-
-# target to generate assembly for a file
-CasillaCasa.cpp.s:
-	$(MAKE) -f CMakeFiles/Ludo.dir/build.make CMakeFiles/Ludo.dir/CasillaCasa.cpp.s
-.PHONY : CasillaCasa.cpp.s
-
-CasillaComienzo.o: CasillaComienzo.cpp.o
-
-.PHONY : CasillaComienzo.o
-
-# target to build an object file
-CasillaComienzo.cpp.o:
-	$(MAKE) -f CMakeFiles/Ludo.dir/build.make CMakeFiles/Ludo.dir/CasillaComienzo.cpp.o
-.PHONY : CasillaComienzo.cpp.o
-
-CasillaComienzo.i: CasillaComienzo.cpp.i
-
-.PHONY : CasillaComienzo.i
-
-# target to preprocess a source file
-CasillaComienzo.cpp.i:
-	$(MAKE) -f CMakeFiles/Ludo.dir/build.make CMakeFiles/Ludo.dir/CasillaComienzo.cpp.i
-.PHONY : CasillaComienzo.cpp.i
-
-CasillaComienzo.s: CasillaComienzo.cpp.s
-
-.PHONY : CasillaComienzo.s
-
-# target to generate assembly for a file
-CasillaComienzo.cpp.s:
-	$(MAKE) -f CMakeFiles/Ludo.dir/build.make CMakeFiles/Ludo.dir/CasillaComienzo.cpp.s
-.PHONY : CasillaComienzo.cpp.s
-
-CasillaDestino.o: CasillaDestino.cpp.o
-
-.PHONY : CasillaDestino.o
-
-# target to build an object file
-CasillaDestino.cpp.o:
-	$(MAKE) -f CMakeFiles/Ludo.dir/build.make CMakeFiles/Ludo.dir/CasillaDestino.cpp.o
-.PHONY : CasillaDestino.cpp.o
-
-CasillaDestino.i: CasillaDestino.cpp.i
-
-.PHONY : CasillaDestino.i
-
-# target to preprocess a source file
-CasillaDestino.cpp.i:
-	$(MAKE) -f CMakeFiles/Ludo.dir/build.make CMakeFiles/Ludo.dir/CasillaDestino.cpp.i
-.PHONY : CasillaDestino.cpp.i
-
-CasillaDestino.s: CasillaDestino.cpp.s
-
-.PHONY : CasillaDestino.s
-
-# target to generate assembly for a file
-CasillaDestino.cpp.s:
-	$(MAKE) -f CMakeFiles/Ludo.dir/build.make CMakeFiles/Ludo.dir/CasillaDestino.cpp.s
-.PHONY : CasillaDestino.cpp.s
-
-CasillaNormal.o: CasillaNormal.cpp.o
-
-.PHONY : CasillaNormal.o
-
-# target to build an object file
-CasillaNormal.cpp.o:
-	$(MAKE) -f CMakeFiles/Ludo.dir/build.make CMakeFiles/Ludo.dir/CasillaNormal.cpp.o
-.PHONY : CasillaNormal.cpp.o
-
-CasillaNormal.i: CasillaNormal.cpp.i
-
-.PHONY : CasillaNormal.i
-
-# target to preprocess a source file
-CasillaNormal.cpp.i:
-	$(MAKE) -f CMakeFiles/Ludo.dir/build.make CMakeFiles/Ludo.dir/CasillaNormal.cpp.i
-.PHONY : CasillaNormal.cpp.i
-
-CasillaNormal.s: CasillaNormal.cpp.s
-
-.PHONY : CasillaNormal.s
-
-# target to generate assembly for a file
-CasillaNormal.cpp.s:
-	$(MAKE) -f CMakeFiles/Ludo.dir/build.make CMakeFiles/Ludo.dir/CasillaNormal.cpp.s
-.PHONY : CasillaNormal.cpp.s
-
-CasillaSegura.o: CasillaSegura.cpp.o
-
-.PHONY : CasillaSegura.o
-
-# target to build an object file
-CasillaSegura.cpp.o:
-	$(MAKE) -f CMakeFiles/Ludo.dir/build.make CMakeFiles/Ludo.dir/CasillaSegura.cpp.o
-.PHONY : CasillaSegura.cpp.o
-
-CasillaSegura.i: CasillaSegura.cpp.i
-
-.PHONY : CasillaSegura.i
-
-# target to preprocess a source file
-CasillaSegura.cpp.i:
-	$(MAKE) -f CMakeFiles/Ludo.dir/build.make CMakeFiles/Ludo.dir/CasillaSegura.cpp.i
-.PHONY : CasillaSegura.cpp.i
-
-CasillaSegura.s: CasillaSegura.cpp.s
-
-.PHONY : CasillaSegura.s
-
-# target to generate assembly for a file
-CasillaSegura.cpp.s:
-	$(MAKE) -f CMakeFiles/Ludo.dir/build.make CMakeFiles/Ludo.dir/CasillaSegura.cpp.s
-.PHONY : CasillaSegura.cpp.s
 
 Ficha.o: Ficha.cpp.o
 
@@ -429,6 +307,7 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... Ludo"
+<<<<<<< HEAD
 	@echo "... CasillaCasa.o"
 	@echo "... CasillaCasa.i"
 	@echo "... CasillaCasa.s"
@@ -444,6 +323,8 @@ help:
 	@echo "... CasillaSegura.o"
 	@echo "... CasillaSegura.i"
 	@echo "... CasillaSegura.s"
+=======
+>>>>>>> 084e9f2462e7bb1163d816394ec92f8b51968d48
 	@echo "... Ficha.o"
 	@echo "... Ficha.i"
 	@echo "... Ficha.s"

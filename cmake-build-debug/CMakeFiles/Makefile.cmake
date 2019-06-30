@@ -7,6 +7,7 @@ set(CMAKE_DEPENDS_GENERATOR "Unix Makefiles")
 # The top level Makefile was generated from the following files:
 set(CMAKE_MAKEFILE_DEPENDS
   "CMakeCache.txt"
+<<<<<<< HEAD
   "/Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.14/Modules/CMakeCCompiler.cmake.in"
   "/Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.14/Modules/CMakeCCompilerABI.c"
   "/Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.14/Modules/CMakeCInformation.cmake"
@@ -25,10 +26,18 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.14/Modules/CMakeDetermineSystem.cmake"
   "/Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.14/Modules/CMakeExtraGeneratorDetermineCompilerMacrosAndIncludeDirs.cmake"
   "/Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.14/Modules/CMakeFindBinUtils.cmake"
+=======
+  "/Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.14/Modules/CMakeCInformation.cmake"
+  "/Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.14/Modules/CMakeCXXInformation.cmake"
+  "/Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.14/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake"
+  "/Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.14/Modules/CMakeCommonLanguageInclude.cmake"
+  "/Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.14/Modules/CMakeExtraGeneratorDetermineCompilerMacrosAndIncludeDirs.cmake"
+>>>>>>> 084e9f2462e7bb1163d816394ec92f8b51968d48
   "/Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.14/Modules/CMakeFindCodeBlocks.cmake"
   "/Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.14/Modules/CMakeGenericSystem.cmake"
   "/Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.14/Modules/CMakeInitializeConfigs.cmake"
   "/Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.14/Modules/CMakeLanguageInformation.cmake"
+<<<<<<< HEAD
   "/Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.14/Modules/CMakeParseImplicitIncludeInfo.cmake"
   "/Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.14/Modules/CMakeParseImplicitLinkInfo.cmake"
   "/Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.14/Modules/CMakeSystem.cmake.in"
@@ -89,12 +98,25 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.14/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake"
   "/Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.14/Modules/Internal/CMakeCheckCompilerFlag.cmake"
   "/Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.14/Modules/Internal/FeatureTesting.cmake"
+=======
+  "/Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.14/Modules/CMakeSystemSpecificInformation.cmake"
+  "/Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.14/Modules/CMakeSystemSpecificInitialize.cmake"
+  "/Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.14/Modules/Compiler/AppleClang-C.cmake"
+  "/Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.14/Modules/Compiler/AppleClang-CXX.cmake"
+  "/Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.14/Modules/Compiler/CMakeCommonCompilerMacros.cmake"
+  "/Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.14/Modules/Compiler/Clang.cmake"
+  "/Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.14/Modules/Compiler/GNU.cmake"
+  "/Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.14/Modules/Internal/CMakeCheckCompilerFlag.cmake"
+>>>>>>> 084e9f2462e7bb1163d816394ec92f8b51968d48
   "/Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.14/Modules/Platform/Apple-AppleClang-C.cmake"
   "/Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.14/Modules/Platform/Apple-AppleClang-CXX.cmake"
   "/Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.14/Modules/Platform/Apple-Clang-C.cmake"
   "/Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.14/Modules/Platform/Apple-Clang-CXX.cmake"
   "/Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.14/Modules/Platform/Apple-Clang.cmake"
+<<<<<<< HEAD
   "/Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.14/Modules/Platform/Darwin-Determine-CXX.cmake"
+=======
+>>>>>>> 084e9f2462e7bb1163d816394ec92f8b51968d48
   "/Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.14/Modules/Platform/Darwin-Initialize.cmake"
   "/Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.14/Modules/Platform/Darwin.cmake"
   "/Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.14/Modules/Platform/UnixPaths.cmake"
@@ -103,6 +125,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.14.3/CMakeCCompiler.cmake"
   "CMakeFiles/3.14.3/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.14.3/CMakeSystem.cmake"
+<<<<<<< HEAD
   "CMakeFiles/feature_tests.c"
   "CMakeFiles/feature_tests.cxx"
   "/usr/local/lib/cmake/SFML/SFMLConfig.cmake"
@@ -110,6 +133,13 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/usr/local/lib/cmake/SFML/SFMLConfigVersion.cmake"
   "/usr/local/lib/cmake/SFML/SFMLSharedTargets-release.cmake"
   "/usr/local/lib/cmake/SFML/SFMLSharedTargets.cmake"
+=======
+  "/usr/local/Cellar/sfml/2.5.1/lib/cmake/SFML/SFMLConfig.cmake"
+  "/usr/local/Cellar/sfml/2.5.1/lib/cmake/SFML/SFMLConfigDependencies.cmake"
+  "/usr/local/Cellar/sfml/2.5.1/lib/cmake/SFML/SFMLConfigVersion.cmake"
+  "/usr/local/Cellar/sfml/2.5.1/lib/cmake/SFML/SFMLSharedTargets-release.cmake"
+  "/usr/local/Cellar/sfml/2.5.1/lib/cmake/SFML/SFMLSharedTargets.cmake"
+>>>>>>> 084e9f2462e7bb1163d816394ec92f8b51968d48
   )
 
 # The corresponding makefile is:

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /Users/benjamindiaz/CLionProjects/Ludo
 -- The C compiler identification is AppleClang 10.0.0.10001044
 -- The CXX compiler identification is AppleClang 10.0.0.10001044
@@ -15,8 +16,17 @@
 -- Detecting CXX compile features - done
 -- Found SFML 2.5.1 in /usr/local/lib/cmake/SFML
 -- SFML_INCLUDE_DIR: /home/rodrigo/Desktop/SFML-2.5.1/include/SFML
+=======
+/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /Users/gabrielspranger/Desktop/Ludo
+-- Found SFML 2.5.1 in /usr/local/Cellar/sfml/2.5.1/lib/cmake/SFML
+-- SFML_INCLUDE_DIR: /usr/local/Cellar/sfml/2.5.1/include/SFML
+>>>>>>> 084e9f2462e7bb1163d816394ec92f8b51968d48
 -- SFML_LIBRARIES: 
 -- SFML_VERSION: 2.5.1
 -- Configuring done
 -- Generating done
+<<<<<<< HEAD
 -- Build files have been written to: /Users/benjamindiaz/CLionProjects/Ludo/cmake-build-debug
+=======
+-- Build files have been written to: /Users/gabrielspranger/Desktop/Ludo/cmake-build-debug
+>>>>>>> 084e9f2462e7bb1163d816394ec92f8b51968d48

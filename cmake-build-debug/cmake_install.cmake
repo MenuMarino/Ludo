@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 # Install script for directory: /Users/benjamindiaz/CLionProjects/Ludo
+=======
+# Install script for directory: /Users/gabrielspranger/Desktop/Ludo
+>>>>>>> 084e9f2462e7bb1163d816394ec92f8b51968d48
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -40,5 +44,9 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
+<<<<<<< HEAD
 file(WRITE "/Users/benjamindiaz/CLionProjects/Ludo/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+=======
+file(WRITE "/Users/gabrielspranger/Desktop/Ludo/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+>>>>>>> 084e9f2462e7bb1163d816394ec92f8b51968d48
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

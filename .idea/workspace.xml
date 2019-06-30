@@ -12,11 +12,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6a004a3e-2fde-40ba-a4d3-8c25f628d802" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/Dado.h" beforeDir="false" afterPath="$PROJECT_DIR$/Dado.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DadoResultado.h" beforeDir="false" afterPath="$PROJECT_DIR$/DadoResultado.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Window.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Window.cpp" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/CasillaCasa.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CasillaCasa.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CasillaComienzo.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CasillaComienzo.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CasillaDestino.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CasillaDestino.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CasillaNormal.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CasillaNormal.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CasillaSegura.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CasillaSegura.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tablero.h" beforeDir="false" afterPath="$PROJECT_DIR$/Tablero.h" afterDir="false" />
+>>>>>>> 084e9f2462e7bb1163d816394ec92f8b51968d48
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.14.3/CMakeCCompiler.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.14.3/CMakeCCompiler.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.14.3/CMakeCXXCompiler.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.14.3/CMakeCXXCompiler.cmake" afterDir="false" />
@@ -29,9 +42,16 @@
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Ludo.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Ludo.dir/DependInfo.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Ludo.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Ludo.dir/build.make" afterDir="false" />
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Ludo.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Ludo.dir/depend.make" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Ludo.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Ludo.dir/flags.make" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Ludo.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Ludo.dir/link.txt" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Ludo.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Ludo.dir/cmake_clean.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Ludo.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Ludo.dir/flags.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Ludo.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Ludo.dir/link.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Ludo.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Ludo.dir/progress.make" afterDir="false" />
+>>>>>>> 084e9f2462e7bb1163d816394ec92f8b51968d48
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
@@ -39,7 +59,11 @@
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/feature_tests.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/feature_tests.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/feature_tests.c" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/feature_tests.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/feature_tests.cxx" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/feature_tests.cxx" afterDir="false" />
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Ludo" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Ludo" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
+>>>>>>> 084e9f2462e7bb1163d816394ec92f8b51968d48
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Ludo.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Ludo.cbp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" afterDir="false" />
@@ -77,8 +101,13 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Casilla.h">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="170">
               <caret line="22" column="16" selection-start-line="22" selection-start-column="16" selection-end-line="22" selection-end-column="16" />
+=======
+            <state relative-caret-position="391">
+              <caret line="25" column="43" selection-start-line="23" selection-start-column="4" selection-end-line="25" selection-end-column="43" />
+>>>>>>> 084e9f2462e7bb1163d816394ec92f8b51968d48
               <folding>
                 <element signature="e#47#75#0" expanded="true" />
               </folding>
@@ -87,6 +116,7 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+<<<<<<< HEAD
         <entry file="file://$PROJECT_DIR$/Dado.h">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="272">
@@ -151,11 +181,18 @@
               <folding>
                 <element signature="e#47#65#0" expanded="true" />
               </folding>
+=======
+        <entry file="file://$PROJECT_DIR$/Tablero.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="198">
+              <caret line="12" column="38" selection-start-line="12" selection-start-column="38" selection-end-line="12" selection-end-column="38" />
+>>>>>>> 084e9f2462e7bb1163d816394ec92f8b51968d48
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+<<<<<<< HEAD
         <entry file="file://$PROJECT_DIR$/Window.cpp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="174">
@@ -172,6 +209,12 @@
               <folding>
                 <element signature="e#104#132#0" expanded="true" />
               </folding>
+=======
+        <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="1" column="13" lean-forward="true" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
+>>>>>>> 084e9f2462e7bb1163d816394ec92f8b51968d48
             </state>
           </provider>
         </entry>
@@ -179,8 +222,13 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Tablero.cpp">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="2805">
               <caret line="165" column="10" selection-start-line="165" selection-start-column="10" selection-end-line="165" selection-end-column="10" />
+=======
+            <state relative-caret-position="357">
+              <caret line="21" selection-start-line="21" selection-end-line="22" />
+>>>>>>> 084e9f2462e7bb1163d816394ec92f8b51968d48
             </state>
           </provider>
         </entry>
@@ -216,13 +264,12 @@
         <option value="$PROJECT_DIR$/CasillaDestino.h" />
         <option value="$PROJECT_DIR$/Window.h" />
         <option value="$PROJECT_DIR$/Ficha.h" />
-        <option value="$PROJECT_DIR$/Tablero.h" />
         <option value="$PROJECT_DIR$/Jugador.h" />
         <option value="$PROJECT_DIR$/Ficha.cpp" />
         <option value="$PROJECT_DIR$/Casilla.h" />
         <option value="$PROJECT_DIR$/main.cpp" />
-        <option value="$PROJECT_DIR$/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/Tablero.cpp" />
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/Dado.h" />
         <option value="$PROJECT_DIR$/DadoResultado.h" />
         <option value="$PROJECT_DIR$/Window.cpp" />
@@ -230,8 +277,17 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" fullScreen="true">
+=======
+        <option value="$PROJECT_DIR$/Tablero.h" />
+        <option value="$PROJECT_DIR$/CMakeLists.txt" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="25" />
+>>>>>>> 084e9f2462e7bb1163d816394ec92f8b51968d48
     <option name="y" value="27" />
-    <option name="width" value="1680" />
+    <option name="width" value="1655" />
     <option name="height" value="958" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -338,12 +394,17 @@
       <workItem from="1561738271505" duration="30000" />
       <workItem from="1561739574951" duration="3391000" />
       <workItem from="1561782678520" duration="5252000" />
+<<<<<<< HEAD
       <workItem from="1561928312400" duration="452000" />
       <workItem from="1561932737491" duration="784000" />
+=======
+      <workItem from="1561932783818" duration="103000" />
+>>>>>>> 084e9f2462e7bb1163d816394ec92f8b51968d48
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="82185000" />
   </component>
   <component name="ToolWindowManager">
@@ -352,6 +413,17 @@
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49518073" visible="true" weight="0.21173105" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" sideWeight="0.5048193" side_tool="true" weight="0.20886981" />
+=======
+    <option name="totallyTimeSpent" value="81052000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="25" y="23" width="1655" height="1027" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4972253" visible="true" weight="0.21760695" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" sideWeight="0.5027747" side_tool="true" visible="true" weight="0.21760695" />
+>>>>>>> 084e9f2462e7bb1163d816394ec92f8b51968d48
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32959184" />
       <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.26626506" />
@@ -363,8 +435,13 @@
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="10" />
+<<<<<<< HEAD
       <window_info anchor="bottom" id="CMake" order="11" weight="0.036144577" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.2939759" />
+=======
+      <window_info anchor="bottom" id="CMake" order="11" visible="true" weight="0.036363635" />
+      <window_info active="true" anchor="bottom" id="Messages" order="12" visible="true" weight="0.29411766" />
+>>>>>>> 084e9f2462e7bb1163d816394ec92f8b51968d48
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -411,10 +488,54 @@
     <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.cpp" />
     <entry file="file:///Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/thread" />
     <entry file="file:///Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/vector" />
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="7" column="56" selection-start-line="7" selection-start-column="56" selection-end-line="7" selection-end-column="56" />
+=======
+    <entry file="file://$PROJECT_DIR$/Window.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="33" selection-start-line="22" selection-start-column="33" selection-end-line="22" selection-end-column="33" />
+          <folding>
+            <element signature="e#104#132#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="10" column="20" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
+          <folding>
+            <element signature="e#59#78#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Window.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="219">
+          <caret line="23" column="23" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Jugador.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="129" column="4" selection-start-line="129" selection-start-column="4" selection-end-line="129" selection-end-column="4" />
+          <folding>
+            <element signature="e#47#65#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Ficha.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" column="4" selection-start-line="25" selection-start-column="4" selection-end-line="25" selection-end-column="4" />
+>>>>>>> 084e9f2462e7bb1163d816394ec92f8b51968d48
         </state>
       </provider>
     </entry>
@@ -495,6 +616,7 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/Juego.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -536,19 +658,31 @@
           <folding>
             <element signature="e#67#87#0" expanded="true" />
           </folding>
+=======
+    <entry file="file://$PROJECT_DIR$/Tablero.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" selection-start-line="21" selection-end-line="22" />
+>>>>>>> 084e9f2462e7bb1163d816394ec92f8b51968d48
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Casilla.h">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="170">
           <caret line="22" column="16" selection-start-line="22" selection-start-column="16" selection-end-line="22" selection-end-column="16" />
+=======
+        <state relative-caret-position="391">
+          <caret line="25" column="43" selection-start-line="23" selection-start-column="4" selection-end-line="25" selection-end-column="43" />
+>>>>>>> 084e9f2462e7bb1163d816394ec92f8b51968d48
           <folding>
             <element signature="e#47#75#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/DadoResultado.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="409">
@@ -593,6 +727,19 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="174">
           <caret line="81" column="32" selection-start-line="81" selection-start-column="32" selection-end-line="81" selection-end-column="32" />
+=======
+    <entry file="file://$PROJECT_DIR$/Tablero.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="12" column="38" selection-start-line="12" selection-start-column="38" selection-end-line="12" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="13" lean-forward="true" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
+>>>>>>> 084e9f2462e7bb1163d816394ec92f8b51968d48
         </state>
       </provider>
     </entry>
