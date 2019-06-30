@@ -34,19 +34,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /home/rodrigo/Desktop/clion-2019.1.4/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake
 
 # The command to remove a file.
-RM = /home/rodrigo/Desktop/clion-2019.1.4/bin/cmake/linux/bin/cmake -E remove -f
+RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/rodrigo/Desktop/Ludo
+CMAKE_SOURCE_DIR = /Users/benjamindiaz/CLionProjects/Ludo
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/rodrigo/Desktop/Ludo/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/benjamindiaz/CLionProjects/Ludo/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/Ludo.dir/depend.make
@@ -59,146 +59,146 @@ include CMakeFiles/Ludo.dir/flags.make
 
 CMakeFiles/Ludo.dir/Tablero.cpp.o: CMakeFiles/Ludo.dir/flags.make
 CMakeFiles/Ludo.dir/Tablero.cpp.o: ../Tablero.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rodrigo/Desktop/Ludo/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Ludo.dir/Tablero.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Ludo.dir/Tablero.cpp.o -c /home/rodrigo/Desktop/Ludo/Tablero.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/benjamindiaz/CLionProjects/Ludo/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Ludo.dir/Tablero.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Ludo.dir/Tablero.cpp.o -c /Users/benjamindiaz/CLionProjects/Ludo/Tablero.cpp
 
 CMakeFiles/Ludo.dir/Tablero.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Ludo.dir/Tablero.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/rodrigo/Desktop/Ludo/Tablero.cpp > CMakeFiles/Ludo.dir/Tablero.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/benjamindiaz/CLionProjects/Ludo/Tablero.cpp > CMakeFiles/Ludo.dir/Tablero.cpp.i
 
 CMakeFiles/Ludo.dir/Tablero.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Ludo.dir/Tablero.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/rodrigo/Desktop/Ludo/Tablero.cpp -o CMakeFiles/Ludo.dir/Tablero.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/benjamindiaz/CLionProjects/Ludo/Tablero.cpp -o CMakeFiles/Ludo.dir/Tablero.cpp.s
 
 CMakeFiles/Ludo.dir/Jugador.cpp.o: CMakeFiles/Ludo.dir/flags.make
 CMakeFiles/Ludo.dir/Jugador.cpp.o: ../Jugador.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rodrigo/Desktop/Ludo/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Ludo.dir/Jugador.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Ludo.dir/Jugador.cpp.o -c /home/rodrigo/Desktop/Ludo/Jugador.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/benjamindiaz/CLionProjects/Ludo/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Ludo.dir/Jugador.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Ludo.dir/Jugador.cpp.o -c /Users/benjamindiaz/CLionProjects/Ludo/Jugador.cpp
 
 CMakeFiles/Ludo.dir/Jugador.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Ludo.dir/Jugador.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/rodrigo/Desktop/Ludo/Jugador.cpp > CMakeFiles/Ludo.dir/Jugador.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/benjamindiaz/CLionProjects/Ludo/Jugador.cpp > CMakeFiles/Ludo.dir/Jugador.cpp.i
 
 CMakeFiles/Ludo.dir/Jugador.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Ludo.dir/Jugador.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/rodrigo/Desktop/Ludo/Jugador.cpp -o CMakeFiles/Ludo.dir/Jugador.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/benjamindiaz/CLionProjects/Ludo/Jugador.cpp -o CMakeFiles/Ludo.dir/Jugador.cpp.s
 
 CMakeFiles/Ludo.dir/Ficha.cpp.o: CMakeFiles/Ludo.dir/flags.make
 CMakeFiles/Ludo.dir/Ficha.cpp.o: ../Ficha.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rodrigo/Desktop/Ludo/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Ludo.dir/Ficha.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Ludo.dir/Ficha.cpp.o -c /home/rodrigo/Desktop/Ludo/Ficha.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/benjamindiaz/CLionProjects/Ludo/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Ludo.dir/Ficha.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Ludo.dir/Ficha.cpp.o -c /Users/benjamindiaz/CLionProjects/Ludo/Ficha.cpp
 
 CMakeFiles/Ludo.dir/Ficha.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Ludo.dir/Ficha.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/rodrigo/Desktop/Ludo/Ficha.cpp > CMakeFiles/Ludo.dir/Ficha.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/benjamindiaz/CLionProjects/Ludo/Ficha.cpp > CMakeFiles/Ludo.dir/Ficha.cpp.i
 
 CMakeFiles/Ludo.dir/Ficha.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Ludo.dir/Ficha.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/rodrigo/Desktop/Ludo/Ficha.cpp -o CMakeFiles/Ludo.dir/Ficha.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/benjamindiaz/CLionProjects/Ludo/Ficha.cpp -o CMakeFiles/Ludo.dir/Ficha.cpp.s
 
 CMakeFiles/Ludo.dir/main.cpp.o: CMakeFiles/Ludo.dir/flags.make
 CMakeFiles/Ludo.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rodrigo/Desktop/Ludo/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Ludo.dir/main.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Ludo.dir/main.cpp.o -c /home/rodrigo/Desktop/Ludo/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/benjamindiaz/CLionProjects/Ludo/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Ludo.dir/main.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Ludo.dir/main.cpp.o -c /Users/benjamindiaz/CLionProjects/Ludo/main.cpp
 
 CMakeFiles/Ludo.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Ludo.dir/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/rodrigo/Desktop/Ludo/main.cpp > CMakeFiles/Ludo.dir/main.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/benjamindiaz/CLionProjects/Ludo/main.cpp > CMakeFiles/Ludo.dir/main.cpp.i
 
 CMakeFiles/Ludo.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Ludo.dir/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/rodrigo/Desktop/Ludo/main.cpp -o CMakeFiles/Ludo.dir/main.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/benjamindiaz/CLionProjects/Ludo/main.cpp -o CMakeFiles/Ludo.dir/main.cpp.s
 
 CMakeFiles/Ludo.dir/Window.cpp.o: CMakeFiles/Ludo.dir/flags.make
 CMakeFiles/Ludo.dir/Window.cpp.o: ../Window.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rodrigo/Desktop/Ludo/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Ludo.dir/Window.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Ludo.dir/Window.cpp.o -c /home/rodrigo/Desktop/Ludo/Window.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/benjamindiaz/CLionProjects/Ludo/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Ludo.dir/Window.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Ludo.dir/Window.cpp.o -c /Users/benjamindiaz/CLionProjects/Ludo/Window.cpp
 
 CMakeFiles/Ludo.dir/Window.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Ludo.dir/Window.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/rodrigo/Desktop/Ludo/Window.cpp > CMakeFiles/Ludo.dir/Window.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/benjamindiaz/CLionProjects/Ludo/Window.cpp > CMakeFiles/Ludo.dir/Window.cpp.i
 
 CMakeFiles/Ludo.dir/Window.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Ludo.dir/Window.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/rodrigo/Desktop/Ludo/Window.cpp -o CMakeFiles/Ludo.dir/Window.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/benjamindiaz/CLionProjects/Ludo/Window.cpp -o CMakeFiles/Ludo.dir/Window.cpp.s
 
 CMakeFiles/Ludo.dir/CasillaCasa.cpp.o: CMakeFiles/Ludo.dir/flags.make
 CMakeFiles/Ludo.dir/CasillaCasa.cpp.o: ../CasillaCasa.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rodrigo/Desktop/Ludo/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Ludo.dir/CasillaCasa.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Ludo.dir/CasillaCasa.cpp.o -c /home/rodrigo/Desktop/Ludo/CasillaCasa.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/benjamindiaz/CLionProjects/Ludo/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Ludo.dir/CasillaCasa.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Ludo.dir/CasillaCasa.cpp.o -c /Users/benjamindiaz/CLionProjects/Ludo/CasillaCasa.cpp
 
 CMakeFiles/Ludo.dir/CasillaCasa.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Ludo.dir/CasillaCasa.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/rodrigo/Desktop/Ludo/CasillaCasa.cpp > CMakeFiles/Ludo.dir/CasillaCasa.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/benjamindiaz/CLionProjects/Ludo/CasillaCasa.cpp > CMakeFiles/Ludo.dir/CasillaCasa.cpp.i
 
 CMakeFiles/Ludo.dir/CasillaCasa.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Ludo.dir/CasillaCasa.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/rodrigo/Desktop/Ludo/CasillaCasa.cpp -o CMakeFiles/Ludo.dir/CasillaCasa.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/benjamindiaz/CLionProjects/Ludo/CasillaCasa.cpp -o CMakeFiles/Ludo.dir/CasillaCasa.cpp.s
 
 CMakeFiles/Ludo.dir/CasillaComienzo.cpp.o: CMakeFiles/Ludo.dir/flags.make
 CMakeFiles/Ludo.dir/CasillaComienzo.cpp.o: ../CasillaComienzo.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rodrigo/Desktop/Ludo/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/Ludo.dir/CasillaComienzo.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Ludo.dir/CasillaComienzo.cpp.o -c /home/rodrigo/Desktop/Ludo/CasillaComienzo.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/benjamindiaz/CLionProjects/Ludo/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/Ludo.dir/CasillaComienzo.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Ludo.dir/CasillaComienzo.cpp.o -c /Users/benjamindiaz/CLionProjects/Ludo/CasillaComienzo.cpp
 
 CMakeFiles/Ludo.dir/CasillaComienzo.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Ludo.dir/CasillaComienzo.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/rodrigo/Desktop/Ludo/CasillaComienzo.cpp > CMakeFiles/Ludo.dir/CasillaComienzo.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/benjamindiaz/CLionProjects/Ludo/CasillaComienzo.cpp > CMakeFiles/Ludo.dir/CasillaComienzo.cpp.i
 
 CMakeFiles/Ludo.dir/CasillaComienzo.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Ludo.dir/CasillaComienzo.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/rodrigo/Desktop/Ludo/CasillaComienzo.cpp -o CMakeFiles/Ludo.dir/CasillaComienzo.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/benjamindiaz/CLionProjects/Ludo/CasillaComienzo.cpp -o CMakeFiles/Ludo.dir/CasillaComienzo.cpp.s
 
 CMakeFiles/Ludo.dir/CasillaSegura.cpp.o: CMakeFiles/Ludo.dir/flags.make
 CMakeFiles/Ludo.dir/CasillaSegura.cpp.o: ../CasillaSegura.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rodrigo/Desktop/Ludo/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/Ludo.dir/CasillaSegura.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Ludo.dir/CasillaSegura.cpp.o -c /home/rodrigo/Desktop/Ludo/CasillaSegura.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/benjamindiaz/CLionProjects/Ludo/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/Ludo.dir/CasillaSegura.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Ludo.dir/CasillaSegura.cpp.o -c /Users/benjamindiaz/CLionProjects/Ludo/CasillaSegura.cpp
 
 CMakeFiles/Ludo.dir/CasillaSegura.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Ludo.dir/CasillaSegura.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/rodrigo/Desktop/Ludo/CasillaSegura.cpp > CMakeFiles/Ludo.dir/CasillaSegura.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/benjamindiaz/CLionProjects/Ludo/CasillaSegura.cpp > CMakeFiles/Ludo.dir/CasillaSegura.cpp.i
 
 CMakeFiles/Ludo.dir/CasillaSegura.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Ludo.dir/CasillaSegura.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/rodrigo/Desktop/Ludo/CasillaSegura.cpp -o CMakeFiles/Ludo.dir/CasillaSegura.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/benjamindiaz/CLionProjects/Ludo/CasillaSegura.cpp -o CMakeFiles/Ludo.dir/CasillaSegura.cpp.s
 
 CMakeFiles/Ludo.dir/CasillaNormal.cpp.o: CMakeFiles/Ludo.dir/flags.make
 CMakeFiles/Ludo.dir/CasillaNormal.cpp.o: ../CasillaNormal.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rodrigo/Desktop/Ludo/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/Ludo.dir/CasillaNormal.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Ludo.dir/CasillaNormal.cpp.o -c /home/rodrigo/Desktop/Ludo/CasillaNormal.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/benjamindiaz/CLionProjects/Ludo/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/Ludo.dir/CasillaNormal.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Ludo.dir/CasillaNormal.cpp.o -c /Users/benjamindiaz/CLionProjects/Ludo/CasillaNormal.cpp
 
 CMakeFiles/Ludo.dir/CasillaNormal.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Ludo.dir/CasillaNormal.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/rodrigo/Desktop/Ludo/CasillaNormal.cpp > CMakeFiles/Ludo.dir/CasillaNormal.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/benjamindiaz/CLionProjects/Ludo/CasillaNormal.cpp > CMakeFiles/Ludo.dir/CasillaNormal.cpp.i
 
 CMakeFiles/Ludo.dir/CasillaNormal.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Ludo.dir/CasillaNormal.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/rodrigo/Desktop/Ludo/CasillaNormal.cpp -o CMakeFiles/Ludo.dir/CasillaNormal.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/benjamindiaz/CLionProjects/Ludo/CasillaNormal.cpp -o CMakeFiles/Ludo.dir/CasillaNormal.cpp.s
 
 CMakeFiles/Ludo.dir/CasillaDestino.cpp.o: CMakeFiles/Ludo.dir/flags.make
 CMakeFiles/Ludo.dir/CasillaDestino.cpp.o: ../CasillaDestino.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rodrigo/Desktop/Ludo/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/Ludo.dir/CasillaDestino.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Ludo.dir/CasillaDestino.cpp.o -c /home/rodrigo/Desktop/Ludo/CasillaDestino.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/benjamindiaz/CLionProjects/Ludo/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/Ludo.dir/CasillaDestino.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Ludo.dir/CasillaDestino.cpp.o -c /Users/benjamindiaz/CLionProjects/Ludo/CasillaDestino.cpp
 
 CMakeFiles/Ludo.dir/CasillaDestino.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Ludo.dir/CasillaDestino.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/rodrigo/Desktop/Ludo/CasillaDestino.cpp > CMakeFiles/Ludo.dir/CasillaDestino.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/benjamindiaz/CLionProjects/Ludo/CasillaDestino.cpp > CMakeFiles/Ludo.dir/CasillaDestino.cpp.i
 
 CMakeFiles/Ludo.dir/CasillaDestino.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Ludo.dir/CasillaDestino.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/rodrigo/Desktop/Ludo/CasillaDestino.cpp -o CMakeFiles/Ludo.dir/CasillaDestino.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/benjamindiaz/CLionProjects/Ludo/CasillaDestino.cpp -o CMakeFiles/Ludo.dir/CasillaDestino.cpp.s
 
 CMakeFiles/Ludo.dir/Juego.cpp.o: CMakeFiles/Ludo.dir/flags.make
 CMakeFiles/Ludo.dir/Juego.cpp.o: ../Juego.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rodrigo/Desktop/Ludo/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/Ludo.dir/Juego.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Ludo.dir/Juego.cpp.o -c /home/rodrigo/Desktop/Ludo/Juego.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/benjamindiaz/CLionProjects/Ludo/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/Ludo.dir/Juego.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Ludo.dir/Juego.cpp.o -c /Users/benjamindiaz/CLionProjects/Ludo/Juego.cpp
 
 CMakeFiles/Ludo.dir/Juego.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Ludo.dir/Juego.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/rodrigo/Desktop/Ludo/Juego.cpp > CMakeFiles/Ludo.dir/Juego.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/benjamindiaz/CLionProjects/Ludo/Juego.cpp > CMakeFiles/Ludo.dir/Juego.cpp.i
 
 CMakeFiles/Ludo.dir/Juego.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Ludo.dir/Juego.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/rodrigo/Desktop/Ludo/Juego.cpp -o CMakeFiles/Ludo.dir/Juego.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/benjamindiaz/CLionProjects/Ludo/Juego.cpp -o CMakeFiles/Ludo.dir/Juego.cpp.s
 
 # Object files for target Ludo
 Ludo_OBJECTS = \
@@ -229,11 +229,11 @@ Ludo: CMakeFiles/Ludo.dir/CasillaNormal.cpp.o
 Ludo: CMakeFiles/Ludo.dir/CasillaDestino.cpp.o
 Ludo: CMakeFiles/Ludo.dir/Juego.cpp.o
 Ludo: CMakeFiles/Ludo.dir/build.make
-Ludo: /home/rodrigo/Desktop/SFML-2.5.1/lib/libsfml-graphics.so.2.5.1
-Ludo: /home/rodrigo/Desktop/SFML-2.5.1/lib/libsfml-window.so.2.5.1
-Ludo: /home/rodrigo/Desktop/SFML-2.5.1/lib/libsfml-system.so.2.5.1
+Ludo: /usr/local/lib/libsfml-graphics.2.5.1.dylib
+Ludo: /usr/local/lib/libsfml-window.2.5.1.dylib
+Ludo: /usr/local/lib/libsfml-system.2.5.1.dylib
 Ludo: CMakeFiles/Ludo.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/rodrigo/Desktop/Ludo/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX executable Ludo"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/benjamindiaz/CLionProjects/Ludo/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX executable Ludo"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Ludo.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -246,6 +246,6 @@ CMakeFiles/Ludo.dir/clean:
 .PHONY : CMakeFiles/Ludo.dir/clean
 
 CMakeFiles/Ludo.dir/depend:
-	cd /home/rodrigo/Desktop/Ludo/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/rodrigo/Desktop/Ludo /home/rodrigo/Desktop/Ludo /home/rodrigo/Desktop/Ludo/cmake-build-debug /home/rodrigo/Desktop/Ludo/cmake-build-debug /home/rodrigo/Desktop/Ludo/cmake-build-debug/CMakeFiles/Ludo.dir/DependInfo.cmake --color=$(COLOR)
+	cd /Users/benjamindiaz/CLionProjects/Ludo/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/benjamindiaz/CLionProjects/Ludo /Users/benjamindiaz/CLionProjects/Ludo /Users/benjamindiaz/CLionProjects/Ludo/cmake-build-debug /Users/benjamindiaz/CLionProjects/Ludo/cmake-build-debug /Users/benjamindiaz/CLionProjects/Ludo/cmake-build-debug/CMakeFiles/Ludo.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/Ludo.dir/depend
 

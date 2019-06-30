@@ -17,7 +17,7 @@ class DadoResultado {
 
 public:
     DadoResultado() {
-        font.loadFromFile("/Users/gabrielspranger/Desktop/POO II/Ludo/Fonts/font.ttf");
+        font.loadFromFile("/Users/benjamindiaz/CLionProjects/Ludo/Fonts/font.ttf");
         text.setFont(font);
         text.setCharacterSize(TEXT_SIZE);
         text.setFillColor(sf::Color::Black);
@@ -25,7 +25,7 @@ public:
         text.setPosition(0, 0);
     }
     DadoResultado(double x, double y) {
-        font.loadFromFile("/Users/gabrielspranger/Desktop/POO II/Ludo/Fonts/font.ttf");
+        font.loadFromFile("/Users/benjamindiaz/CLionProjects/Ludo/Fonts/font.ttf");
         text.setFont(font);
         text.setCharacterSize(TEXT_SIZE);
         text.setFillColor(sf::Color::Black);

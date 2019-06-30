@@ -6,11 +6,11 @@
 
 Window::Window(const std::string& WindowName) {
     window.create(sf::VideoMode(WINDOW_WIDTH, WINDOW_HEIGHT), WindowName);
-    texture.loadFromFile("/Users/gabrielspranger/Desktop/POO II/Ludo/Images/ludo-board.png");
+    texture.loadFromFile("/Users/benjamindiaz/CLionProjects/Ludo/Images/ludo-board.png");
     texture.create(WINDOW_WIDTH, WINDOW_HEIGHT);
     sprite.setTexture(texture);
 
-    turno_text_font.loadFromFile("/Users/gabrielspranger/Desktop/POO II/Ludo/Fonts/Arial/Arial.ttf");
+    turno_text_font.loadFromFile("/Users/benjamindiaz/CLionProjects/Ludo/Fonts/Arial/Arial.ttf");
     turno_text.setFont(turno_text_font);
     turno_text.setCharacterSize(25);
     turno_text.setFillColor(sf::Color::Black);
@@ -78,6 +78,9 @@ void Window::openWindow(vector<Jugador*>& _jugadores, const int& num_jugadores) 
                     }
                     updateWindow(sprite, dado_resultado.get_dado_resultado(), turno_text, jugadores, num_jugadores);
                     ++turno;
+                    if(num_movimientos == 6){
+                        --turno;
+                    }
                 }
             }
 

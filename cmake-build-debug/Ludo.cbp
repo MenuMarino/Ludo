@@ -5,172 +5,168 @@
 		<Option title="Ludo"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="gcc"/>
-		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\SFML-2.5.1\;CMake Files\..\SFML-2.5.1\lib\;CMake Files\..\SFML-2.5.1\lib\cmake\;CMake Files\..\SFML-2.5.1\lib\cmake\SFML\;"/>
+		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\usr\;CMake Files\..\..\..\..\usr\local\;CMake Files\..\..\..\..\usr\local\lib\;CMake Files\..\..\..\..\usr\local\lib\cmake\;CMake Files\..\..\..\..\usr\local\lib\cmake\SFML\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/home/rodrigo/Desktop/Ludo/cmake-build-debug"/>
+				<Option working_dir="/Users/benjamindiaz/CLionProjects/Ludo/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/rodrigo/Desktop/Ludo/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/rodrigo/Desktop/Ludo/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/rodrigo/Desktop/Ludo/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/rodrigo/Desktop/Ludo/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/benjamindiaz/CLionProjects/Ludo/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/benjamindiaz/CLionProjects/Ludo/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/benjamindiaz/CLionProjects/Ludo/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/benjamindiaz/CLionProjects/Ludo/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/home/rodrigo/Desktop/Ludo/cmake-build-debug"/>
+				<Option working_dir="/Users/benjamindiaz/CLionProjects/Ludo/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/rodrigo/Desktop/Ludo/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/rodrigo/Desktop/Ludo/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/rodrigo/Desktop/Ludo/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/rodrigo/Desktop/Ludo/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="Ludo">
-				<Option output="/home/rodrigo/Desktop/Ludo/cmake-build-debug/Ludo" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/rodrigo/Desktop/Ludo/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/home/rodrigo/Desktop/Ludo/SFML_INCLUDE_DIR"/>
-					<Add directory="/home/rodrigo/Desktop/SFML-2.5.1/include"/>
-					<Add directory="/usr/include/c++/7"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
-					<Add directory="/usr/include/c++/7/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/rodrigo/Desktop/Ludo/cmake-build-debug/Makefile&quot;  VERBOSE=1 Ludo"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/rodrigo/Desktop/Ludo/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/rodrigo/Desktop/Ludo/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/rodrigo/Desktop/Ludo/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="Ludo/fast">
-				<Option output="/home/rodrigo/Desktop/Ludo/cmake-build-debug/Ludo" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/rodrigo/Desktop/Ludo/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/home/rodrigo/Desktop/Ludo/SFML_INCLUDE_DIR"/>
-					<Add directory="/home/rodrigo/Desktop/SFML-2.5.1/include"/>
-					<Add directory="/usr/include/c++/7"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
-					<Add directory="/usr/include/c++/7/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/rodrigo/Desktop/Ludo/cmake-build-debug/Makefile&quot;  VERBOSE=1 Ludo/fast"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/rodrigo/Desktop/Ludo/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/rodrigo/Desktop/Ludo/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/rodrigo/Desktop/Ludo/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/benjamindiaz/CLionProjects/Ludo/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/benjamindiaz/CLionProjects/Ludo/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/benjamindiaz/CLionProjects/Ludo/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/benjamindiaz/CLionProjects/Ludo/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/home/rodrigo/Desktop/Ludo/cmake-build-debug"/>
+				<Option working_dir="/Users/benjamindiaz/CLionProjects/Ludo/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/rodrigo/Desktop/Ludo/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/rodrigo/Desktop/Ludo/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/rodrigo/Desktop/Ludo/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/rodrigo/Desktop/Ludo/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/benjamindiaz/CLionProjects/Ludo/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/benjamindiaz/CLionProjects/Ludo/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/benjamindiaz/CLionProjects/Ludo/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/benjamindiaz/CLionProjects/Ludo/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Ludo">
+				<Option output="/Users/benjamindiaz/CLionProjects/Ludo/cmake-build-debug/Ludo" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/benjamindiaz/CLionProjects/Ludo/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/benjamindiaz/CLionProjects/Ludo/SFML_INCLUDE_DIR"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/benjamindiaz/CLionProjects/Ludo/cmake-build-debug/Makefile&quot;  VERBOSE=1 Ludo"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/benjamindiaz/CLionProjects/Ludo/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/benjamindiaz/CLionProjects/Ludo/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/benjamindiaz/CLionProjects/Ludo/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Ludo/fast">
+				<Option output="/Users/benjamindiaz/CLionProjects/Ludo/cmake-build-debug/Ludo" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/benjamindiaz/CLionProjects/Ludo/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/benjamindiaz/CLionProjects/Ludo/SFML_INCLUDE_DIR"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/benjamindiaz/CLionProjects/Ludo/cmake-build-debug/Makefile&quot;  VERBOSE=1 Ludo/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/benjamindiaz/CLionProjects/Ludo/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/benjamindiaz/CLionProjects/Ludo/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/benjamindiaz/CLionProjects/Ludo/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/rodrigo/Desktop/Ludo/CasillaCasa.cpp">
+		<Unit filename="/Users/benjamindiaz/CLionProjects/Ludo/CasillaCasa.cpp">
 			<Option target="Ludo"/>
 		</Unit>
-		<Unit filename="/home/rodrigo/Desktop/Ludo/CasillaCasa.h">
+		<Unit filename="/Users/benjamindiaz/CLionProjects/Ludo/CasillaCasa.h">
 			<Option target="Ludo"/>
 		</Unit>
-		<Unit filename="/home/rodrigo/Desktop/Ludo/CasillaComienzo.cpp">
+		<Unit filename="/Users/benjamindiaz/CLionProjects/Ludo/CasillaComienzo.cpp">
 			<Option target="Ludo"/>
 		</Unit>
-		<Unit filename="/home/rodrigo/Desktop/Ludo/CasillaComienzo.h">
+		<Unit filename="/Users/benjamindiaz/CLionProjects/Ludo/CasillaComienzo.h">
 			<Option target="Ludo"/>
 		</Unit>
-		<Unit filename="/home/rodrigo/Desktop/Ludo/CasillaDestino.cpp">
+		<Unit filename="/Users/benjamindiaz/CLionProjects/Ludo/CasillaDestino.cpp">
 			<Option target="Ludo"/>
 		</Unit>
-		<Unit filename="/home/rodrigo/Desktop/Ludo/CasillaDestino.h">
+		<Unit filename="/Users/benjamindiaz/CLionProjects/Ludo/CasillaDestino.h">
 			<Option target="Ludo"/>
 		</Unit>
-		<Unit filename="/home/rodrigo/Desktop/Ludo/CasillaNormal.cpp">
+		<Unit filename="/Users/benjamindiaz/CLionProjects/Ludo/CasillaNormal.cpp">
 			<Option target="Ludo"/>
 		</Unit>
-		<Unit filename="/home/rodrigo/Desktop/Ludo/CasillaNormal.h">
+		<Unit filename="/Users/benjamindiaz/CLionProjects/Ludo/CasillaNormal.h">
 			<Option target="Ludo"/>
 		</Unit>
-		<Unit filename="/home/rodrigo/Desktop/Ludo/CasillaSegura.cpp">
+		<Unit filename="/Users/benjamindiaz/CLionProjects/Ludo/CasillaSegura.cpp">
 			<Option target="Ludo"/>
 		</Unit>
-		<Unit filename="/home/rodrigo/Desktop/Ludo/CasillaSegura.h">
+		<Unit filename="/Users/benjamindiaz/CLionProjects/Ludo/CasillaSegura.h">
 			<Option target="Ludo"/>
 		</Unit>
-		<Unit filename="/home/rodrigo/Desktop/Ludo/DadoResultado.h">
+		<Unit filename="/Users/benjamindiaz/CLionProjects/Ludo/DadoResultado.h">
 			<Option target="Ludo"/>
 		</Unit>
-		<Unit filename="/home/rodrigo/Desktop/Ludo/Ficha.cpp">
+		<Unit filename="/Users/benjamindiaz/CLionProjects/Ludo/Ficha.cpp">
 			<Option target="Ludo"/>
 		</Unit>
-		<Unit filename="/home/rodrigo/Desktop/Ludo/Ficha.h">
+		<Unit filename="/Users/benjamindiaz/CLionProjects/Ludo/Ficha.h">
 			<Option target="Ludo"/>
 		</Unit>
-		<Unit filename="/home/rodrigo/Desktop/Ludo/Juego.cpp">
+		<Unit filename="/Users/benjamindiaz/CLionProjects/Ludo/Juego.cpp">
 			<Option target="Ludo"/>
 		</Unit>
-		<Unit filename="/home/rodrigo/Desktop/Ludo/Juego.h">
+		<Unit filename="/Users/benjamindiaz/CLionProjects/Ludo/Juego.h">
 			<Option target="Ludo"/>
 		</Unit>
-		<Unit filename="/home/rodrigo/Desktop/Ludo/Jugador.cpp">
+		<Unit filename="/Users/benjamindiaz/CLionProjects/Ludo/Jugador.cpp">
 			<Option target="Ludo"/>
 		</Unit>
-		<Unit filename="/home/rodrigo/Desktop/Ludo/Jugador.h">
+		<Unit filename="/Users/benjamindiaz/CLionProjects/Ludo/Jugador.h">
 			<Option target="Ludo"/>
 		</Unit>
-		<Unit filename="/home/rodrigo/Desktop/Ludo/Tablero.cpp">
+		<Unit filename="/Users/benjamindiaz/CLionProjects/Ludo/Tablero.cpp">
 			<Option target="Ludo"/>
 		</Unit>
-		<Unit filename="/home/rodrigo/Desktop/Ludo/Tablero.h">
+		<Unit filename="/Users/benjamindiaz/CLionProjects/Ludo/Tablero.h">
 			<Option target="Ludo"/>
 		</Unit>
-		<Unit filename="/home/rodrigo/Desktop/Ludo/Window.cpp">
+		<Unit filename="/Users/benjamindiaz/CLionProjects/Ludo/Window.cpp">
 			<Option target="Ludo"/>
 		</Unit>
-		<Unit filename="/home/rodrigo/Desktop/Ludo/Window.h">
+		<Unit filename="/Users/benjamindiaz/CLionProjects/Ludo/Window.h">
 			<Option target="Ludo"/>
 		</Unit>
-		<Unit filename="/home/rodrigo/Desktop/Ludo/main.cpp">
+		<Unit filename="/Users/benjamindiaz/CLionProjects/Ludo/main.cpp">
 			<Option target="Ludo"/>
 		</Unit>
-		<Unit filename="/home/rodrigo/Desktop/Ludo/CMakeLists.txt">
+		<Unit filename="/Users/benjamindiaz/CLionProjects/Ludo/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
-		<Unit filename="/home/rodrigo/Desktop/Ludo/../SFML-2.5.1/lib/cmake/SFML/SFMLConfig.cmake">
-			<Option virtualFolder="CMake Files\..\SFML-2.5.1\lib\cmake\SFML\"/>
+		<Unit filename="/Users/benjamindiaz/CLionProjects/Ludo/../../../../usr/local/lib/cmake/SFML/SFMLConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\lib\cmake\SFML\"/>
 		</Unit>
-		<Unit filename="/home/rodrigo/Desktop/Ludo/../SFML-2.5.1/lib/cmake/SFML/SFMLConfigDependencies.cmake">
-			<Option virtualFolder="CMake Files\..\SFML-2.5.1\lib\cmake\SFML\"/>
+		<Unit filename="/Users/benjamindiaz/CLionProjects/Ludo/../../../../usr/local/lib/cmake/SFML/SFMLConfigDependencies.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\lib\cmake\SFML\"/>
 		</Unit>
-		<Unit filename="/home/rodrigo/Desktop/Ludo/../SFML-2.5.1/lib/cmake/SFML/SFMLConfigVersion.cmake">
-			<Option virtualFolder="CMake Files\..\SFML-2.5.1\lib\cmake\SFML\"/>
+		<Unit filename="/Users/benjamindiaz/CLionProjects/Ludo/../../../../usr/local/lib/cmake/SFML/SFMLConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\lib\cmake\SFML\"/>
 		</Unit>
-		<Unit filename="/home/rodrigo/Desktop/Ludo/../SFML-2.5.1/lib/cmake/SFML/SFMLSharedTargets-release.cmake">
-			<Option virtualFolder="CMake Files\..\SFML-2.5.1\lib\cmake\SFML\"/>
+		<Unit filename="/Users/benjamindiaz/CLionProjects/Ludo/../../../../usr/local/lib/cmake/SFML/SFMLSharedTargets-release.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\lib\cmake\SFML\"/>
 		</Unit>
-		<Unit filename="/home/rodrigo/Desktop/Ludo/../SFML-2.5.1/lib/cmake/SFML/SFMLSharedTargets.cmake">
-			<Option virtualFolder="CMake Files\..\SFML-2.5.1\lib\cmake\SFML\"/>
+		<Unit filename="/Users/benjamindiaz/CLionProjects/Ludo/../../../../usr/local/lib/cmake/SFML/SFMLSharedTargets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\local\lib\cmake\SFML\"/>
 		</Unit>
 	</Project>
 </CodeBlocks_project_file>
