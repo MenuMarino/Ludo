@@ -3,7 +3,6 @@
 
 //#include <thread>
 #include "Casilla.h"
-#include "CasillaNormal.h"
 
 class Tablero {
     vector<Casilla*> casillas;
