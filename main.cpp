@@ -33,9 +33,7 @@ int main() {
         Jugador* j1 = new Jugador("Jugador 1", 4);
         Jugador* j2 = new Jugador("Jugador 2", 3);
 
-        vector<Jugador*> jugadores = {j1, j2};
-
-        ludo->openWindow(jugadores, num_jugadores);
+        ludo->openWindow(j1, j2, num_jugadores);
 
 
     } else if (num_jugadores == 3) {
@@ -44,9 +42,7 @@ int main() {
         Jugador* j2 = new Jugador("Jugador 2", 3);
         Jugador* j3 = new Jugador("Jugador 3", 1);
 
-        vector<Jugador*> jugadores = {j1, j2, j3};
-
-        ludo->openWindow(jugadores, num_jugadores);
+        ludo->openWindow(j1, j2, j3, num_jugadores);
 
     } else if (num_jugadores == 4) {
 
@@ -55,9 +51,7 @@ int main() {
         Jugador* j3 = new Jugador("Jugador 3", 1);
         Jugador* j4 = new Jugador("Jugador 4", 2);
 
-        vector<Jugador*> jugadores = {j1, j2, j3, j4};
-
-        ludo->openWindow(jugadores, num_jugadores);
+        ludo->openWindow(j1, j2, j3, j4, num_jugadores);
 
     }
 

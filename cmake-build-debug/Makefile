@@ -48,17 +48,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-<<<<<<< HEAD
-CMAKE_SOURCE_DIR = /Users/benjamindiaz/CLionProjects/Ludo
+CMAKE_SOURCE_DIR = "/Users/gabrielspranger/Desktop/POO II/Ludo"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/benjamindiaz/CLionProjects/Ludo/cmake-build-debug
-=======
-CMAKE_SOURCE_DIR = /Users/gabrielspranger/Desktop/Ludo
-
-# The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/gabrielspranger/Desktop/Ludo/cmake-build-debug
->>>>>>> 084e9f2462e7bb1163d816394ec92f8b51968d48
+CMAKE_BINARY_DIR = "/Users/gabrielspranger/Desktop/POO II/Ludo/cmake-build-debug"
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,15 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-<<<<<<< HEAD
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/benjamindiaz/CLionProjects/Ludo/cmake-build-debug/CMakeFiles /Users/benjamindiaz/CLionProjects/Ludo/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/gabrielspranger/Desktop/POO II/Ludo/cmake-build-debug/CMakeFiles" "/Users/gabrielspranger/Desktop/POO II/Ludo/cmake-build-debug/CMakeFiles/progress.marks"
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/benjamindiaz/CLionProjects/Ludo/cmake-build-debug/CMakeFiles 0
-=======
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gabrielspranger/Desktop/Ludo/cmake-build-debug/CMakeFiles /Users/gabrielspranger/Desktop/Ludo/cmake-build-debug/CMakeFiles/progress.marks
-	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/gabrielspranger/Desktop/Ludo/cmake-build-debug/CMakeFiles 0
->>>>>>> 084e9f2462e7bb1163d816394ec92f8b51968d48
+	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/gabrielspranger/Desktop/POO II/Ludo/cmake-build-debug/CMakeFiles" 0
 .PHONY : all
 
 # The main clean target
@@ -307,24 +294,6 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... Ludo"
-<<<<<<< HEAD
-	@echo "... CasillaCasa.o"
-	@echo "... CasillaCasa.i"
-	@echo "... CasillaCasa.s"
-	@echo "... CasillaComienzo.o"
-	@echo "... CasillaComienzo.i"
-	@echo "... CasillaComienzo.s"
-	@echo "... CasillaDestino.o"
-	@echo "... CasillaDestino.i"
-	@echo "... CasillaDestino.s"
-	@echo "... CasillaNormal.o"
-	@echo "... CasillaNormal.i"
-	@echo "... CasillaNormal.s"
-	@echo "... CasillaSegura.o"
-	@echo "... CasillaSegura.i"
-	@echo "... CasillaSegura.s"
-=======
->>>>>>> 084e9f2462e7bb1163d816394ec92f8b51968d48
 	@echo "... Ficha.o"
 	@echo "... Ficha.i"
 	@echo "... Ficha.s"

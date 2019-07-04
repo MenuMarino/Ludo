@@ -14,7 +14,7 @@ struct Dado {
     sf::Texture dadoTexture;
 
     Dado() {
-        dadoTexture.loadFromFile("/Users/benjamindiaz/CLionProjects/Ludo/Images/dice.png");
+        dadoTexture.loadFromFile("/Users/gabrielspranger/Desktop/POO II/Ludo/Images/dice.png");
         dadoTexture.create(128, 128);
         dado.setTexture(dadoTexture);
         dado.setPosition(502, 502);

@@ -6,11 +6,17 @@
 #define LUDO_WINDOW_H
 
 #include <SFML/Graphics.hpp>
+#include <vector>
 #include "Dado.h"
 #include "DadoResultado.h"
 #include "Jugador.h"
 #include "DadoResultado.h"
 #include "Tablero.h"
+
+/// - TODO:
+// * mostrar cuantas fichas ha metido al destino cada jugador?
+// * dejar que cada jugador meta una ficha al destino y desaparecer esa ficha
+// * terminar el juego cuando un jugador metio las 4 fichas (o dejar que sigan jugando para 2do 3er y 4to puesto?)
 
 class Window {
     const int WINDOW_WIDTH = 1132;
@@ -21,45 +27,24 @@ class Window {
     sf::RenderWindow window;
     Dado dado;
     DadoResultado dado_resultado;
-    int num_movimientos = 0;
+    int num_movimientos_amarillo = 0;
+    int num_movimientos_verde = 0;
+    int num_movimientos_azul = 0;
+    int num_movimientos_rojo = 0;
+    int turno = 0;
     Tablero tablero;
     sf::Text turno_text;
     sf::Font turno_text_font;
 public:
-
-    /// Coordenadas Importantes Amarillo
-    const double ultima_casilla_normal_para_amarillo_x = tablero.get_casilla_x_at(tablero.get_casilla_size()-1);
-    const double ultima_casilla_normal_para_amarillo_y = tablero.get_casilla_y_at(tablero.get_casilla_size()-1);
-
-    const double ultima_casilla_segura_para_amarillo_x = tablero.get_recta_final_amarillo_x_at(5);
-    const double ultima_casilla_segura_para_amarillo_y = tablero.get_recta_final_amarillo_y_at(5);
-
-    /// Coordenadas Importantes Verde
-    const double ultima_casilla_normal_para_verde_x = tablero.get_casilla_x_at(12);
-    const double ultima_casilla_normal_para_verde_y = tablero.get_casilla_y_at(12);
-
-    const double ultima_casilla_segura_para_verde_x = tablero.get_recta_final_verde_x_at(5);
-    const double ultima_casilla_segura_para_verde_y = tablero.get_recta_final_verde_y_at(5);
-
-    /// Coordenadas Importantes Rojo
-    const double ultima_casilla_normal_para_rojo_x = tablero.get_casilla_x_at(12);
-    const double ultima_casilla_normal_para_rojo_y = tablero.get_casilla_y_at(12);
-
-    const double ultima_casilla_segura_para_rojo_x = tablero.get_recta_final_rojo_x_at(5);
-    const double ultima_casilla_segura_para_rojo_y = tablero.get_recta_final_rojo_y_at(5);
-
-    /// Coordenadas Importantes Azul
-    const double ultima_casilla_normal_para_azul_x = tablero.get_casilla_x_at(12);
-    const double ultima_casilla_normal_para_azul_y = tablero.get_casilla_y_at(12);
-
-    const double ultima_casilla_segura_para_azul_x = tablero.get_recta_final_azul_x_at(5);
-    const double ultima_casilla_segura_para_azul_y = tablero.get_recta_final_azul_y_at(5);
-
     Window() = default;
     explicit Window(const std::string& WindowName);
-    void openWindow(vector<Jugador*>& _jugadores, const int& num_jugadores);
-    void waitSeconds(float time);
+    void openWindow(Jugador* j1, Jugador* j2, int& num_jugadores);
+    void openWindow(Jugador* j1, Jugador* j2, Jugador* j3, int& num_jugadores);
+    void openWindow(Jugador* j1, Jugador* j2, Jugador* j3, Jugador* j4, int& num_jugadores);
     void updateWindow(const sf::Sprite& background, const sf::Text& dado_result, const sf::Text& turno, const vector<Jugador*>& jugadores, const int& num_jugadores);
+    void reset2jugadores(int color);
+    void reset3jugadores(int color);
+    void reset4jugadores(int color);
     ~Window() {
         for (auto& jugador: jugadores)
             delete jugador;

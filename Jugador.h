@@ -6,16 +6,18 @@
 
 class Jugador {
     Tablero tablero;
+    int current_ficha = 0;
     int ficha_a_sacar_de_casa_roja = 0;
     int ficha_a_sacar_de_casa_azul = 0;
     int ficha_a_sacar_de_casa_verde = 0;
     int ficha_a_sacar_de_casa_amarilla = 0;
-    int current_ficha = 0;
     string nombre;
     int color;
     vector<Ficha*> fichas;
     int num_fichas = 4;
+    bool all_in_casa = true;
 public:
+
     Jugador() = default;
     Jugador(const string& nombre, int color): nombre{nombre}, color{color} {
         switch (color) {
@@ -49,46 +51,63 @@ public:
 
     };
 
-    void move_ficha_to(Casilla* casilla) {
-        fichas[current_ficha]->move_to(casilla);
+    sf::FloatRect get_f1_bounds() { return fichas[0]->get_ficha_sprite().getGlobalBounds(); }
+    sf::FloatRect get_f2_bounds() { return fichas[1]->get_ficha_sprite().getGlobalBounds(); }
+    sf::FloatRect get_f3_bounds() { return fichas[2]->get_ficha_sprite().getGlobalBounds(); }
+    sf::FloatRect get_f4_bounds() { return fichas[3]->get_ficha_sprite().getGlobalBounds(); }
+
+    void set_all_in_casa(bool _all_in_casa) { all_in_casa = _all_in_casa; }
+    bool get_all_in_casa() { return all_in_casa; }
+
+    void move_ficha_to(Casilla* casilla, int ficha, int movimientos) {
+        fichas[ficha]->move_to(casilla, movimientos);
     }
 
-    void move_ficha_from_casa() {
+    void check_all_in_casa() {
+        int checker = 0;
+        for (int i = 0; i < num_fichas; ++i) {
+            if (fichas[i]->get_x() == fichas[i]->get_initial_x() && fichas[i]->get_y() == fichas[i]->get_initial_y())
+                ++checker;
+        }
+        if (checker == 4) {
+            all_in_casa = true;
+        }
+    }
+
+    void move_ficha_from_casa(int pos) {
         switch (color) {
-            case 1:
-                if (ficha_a_sacar_de_casa_roja != 4 && fichas[ficha_a_sacar_de_casa_roja]->get_estado() == 'C') {
-                    fichas[ficha_a_sacar_de_casa_roja]->move_to(tablero.get_casilla_at(27));
-                    ++ficha_a_sacar_de_casa_roja;
-                }
-                break;
-            case 2:
-                if (ficha_a_sacar_de_casa_azul != 4 && fichas[ficha_a_sacar_de_casa_azul]->get_estado() == 'C') {
-                    fichas[ficha_a_sacar_de_casa_azul]->move_to(tablero.get_casilla_at(41));
-                    ++ficha_a_sacar_de_casa_azul;
-                }
+            case 4:
+                fichas[pos]->set_estado('J');
+                fichas[pos]->move_to(tablero.get_casilla_at(1, 4), 0);
+                all_in_casa = false;
                 break;
             case 3:
-                if (ficha_a_sacar_de_casa_verde != 4 && fichas[ficha_a_sacar_de_casa_verde]->get_estado() == 'C') {
-                    fichas[ficha_a_sacar_de_casa_verde]->move_to(tablero.get_casilla_at(14));
-                    ++ficha_a_sacar_de_casa_verde;
-                }
+                fichas[pos]->set_estado('J');
+                fichas[pos]->move_to(tablero.get_casilla_at(14, 3), 0);
+                all_in_casa = false;
                 break;
-            case 4:
-                if (ficha_a_sacar_de_casa_amarilla != 4 && fichas[ficha_a_sacar_de_casa_amarilla]->get_estado() == 'C') {
-                    fichas[ficha_a_sacar_de_casa_amarilla]->move_to(tablero.get_casilla_at(1));
-                    ++ficha_a_sacar_de_casa_amarilla;
-                }
+            case 1:
+                fichas[pos]->set_estado('J');
+                fichas[pos]->move_to(tablero.get_casilla_at(27, 1), 0);
+                all_in_casa = false;
+                break;
+            case 2:
+                fichas[pos]->set_estado('J');
+                fichas[pos]->move_to(tablero.get_casilla_at(40, 2), 0);
+                all_in_casa = false;
+                break;
+            default:
                 break;
         }
     }
 
     void set_current_ficha(int i) { current_ficha = i; }
 
-    Ficha get_ficha_at(int i) { return *(fichas[i]); }
+    Ficha* get_ficha_at(int i) { return fichas[i]; }
     sf::CircleShape get_ficha_sprite_at(int i) { return fichas[i]->get_ficha_sprite(); }
 
     int get_num_fichas() { return num_fichas; }
-    void set_num_fichas(int _num_fichas) { num_fichas = _num_fichas; }
+    void delete_ficha_at(int i) { fichas.erase(fichas.begin()+i); } /// llamar cuando ficha llegue a zona segura
 
     double get_corner_x() {
         switch (color) {
@@ -100,6 +119,8 @@ public:
                 return 60.0;
             case 4:
                 return 60.0;
+            default:
+                break;
         }
     }
 
@@ -113,6 +134,8 @@ public:
                 return 40.0;
             case 4:
                 return 1070.0;
+            default:
+                break;
         }
     }
 
@@ -126,6 +149,8 @@ public:
                 return 300.0;
             case 4:
                 return 300.0;
+            default:
+                break;
         }
     }
 
@@ -139,6 +164,8 @@ public:
                 return 40.0;
             case 4:
                 return 1070.0;
+            default:
+                break;
         }
     }
 
