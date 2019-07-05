@@ -64,6 +64,10 @@ void Ficha::move_to(Casilla* casilla, int _posicion_actual) {
                 current_casilla->set_current_ficha(nullptr);
                 current_casilla = casilla;
             }
+        } else if (casilla->get_x() == -1000.0) {
+                x = casilla->get_x();
+                y = casilla->get_y();
+                ficha_sprite.setPosition(x, y);
         } else { /// ya hay una ficha en la casilla
             if (casilla->get_current_ficha()->get_color() != this->get_color()) { /// las fichas son del mismo color?
                 casilla->get_current_ficha()->move_to_casa(); /// esta ficha se come a la que ya estaba en la casilla

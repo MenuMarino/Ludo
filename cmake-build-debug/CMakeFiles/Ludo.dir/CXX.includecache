@@ -64,6 +64,16 @@ DadoResultado.h
 Tablero.h
 /Users/gabrielspranger/Desktop/POO II/Ludo/Tablero.h
 
+/Users/gabrielspranger/Desktop/POO II/Ludo/main.cpp
+iostream
+-
+string
+-
+unistd.h
+-
+Window.h
+/Users/gabrielspranger/Desktop/POO II/Ludo/Window.h
+
 /usr/local/Cellar/sfml/2.5.1/include/SFML/Config.hpp
 TargetConditionals.h
 /usr/local/Cellar/sfml/2.5.1/include/SFML/TargetConditionals.h

@@ -56,8 +56,6 @@ void Window::openWindow(Jugador *j1, Jugador *j2, Jugador *j3, int& num_jugadore
 void Window::openWindow(Jugador *j1, Jugador *j2, Jugador *j3, Jugador *j4, int& num_jugadores) {
     this->jugadores = {j1, j2, j3, j4};
 
-    // TODO que repita el turno al sacar 6, sacar tres 6 seguidos hace perder turno
-
     // TODO que solo se pueda lanzar el dado 1 vez cuando se tiene al menos una ficha en juego
 
     // TODO mejorar el código (apariencia, meter la implementación el las clases y más comentarios)
@@ -66,6 +64,11 @@ void Window::openWindow(Jugador *j1, Jugador *j2, Jugador *j3, Jugador *j4, int&
     int fichas_metidas_verde = 0;
     int fichas_metidas_rojo = 0;
     int fichas_metidas_azul = 0;
+
+    bool amarillo_saco_6 = false;
+    bool verde_saco_6 = false;
+    bool rojo_saco_6 = false;
+    bool azul_saco_6 = false;
 
     bool clicked_on_j1_f1 = false;
     bool clicked_on_j1_f2 = false;
@@ -186,6 +189,12 @@ void Window::openWindow(Jugador *j1, Jugador *j2, Jugador *j3, Jugador *j4, int&
                     }
                 }
             }
+
+            short veces_dado_dio_6_amarillo = 0;
+            short veces_dado_dio_6_verde = 0;
+            short veces_dado_dio_6_rojo = 0;
+            short veces_dado_dio_6_azul = 0;
+
             /// se hizo un click
             if (event.type == sf::Event::MouseButtonReleased) {
                 sf::Vector2f clickCoordinate = window.mapPixelToCoords(sf::Mouse::getPosition(window));
@@ -200,6 +209,14 @@ void Window::openWindow(Jugador *j1, Jugador *j2, Jugador *j3, Jugador *j4, int&
                         j1->check_all_in_casa(); /// chequear que todos esten en casa
                         if (j1->get_all_in_casa() && num_movimientos_amarillo != 6) { /// todas las fichas estan en casa y no ha tocado 6? pierde turno
                             ++turno;
+                        } else if (!(j1->get_all_in_casa()) && num_movimientos_amarillo == 6) { /// tiene al menos una ficha en jugego y sacó 6? turno extra
+                            if (veces_dado_dio_6_amarillo == 3) { /// saco tres veces seguidas 6
+                                veces_dado_dio_6_amarillo = 0;
+                                ++turno;
+                            } else {
+                                amarillo_saco_6 = true;
+                                ++veces_dado_dio_6_amarillo;
+                            }
                         }
                     } else if (turno == 1) {
                         num_movimientos_verde = dado.lanzar();
@@ -208,6 +225,14 @@ void Window::openWindow(Jugador *j1, Jugador *j2, Jugador *j3, Jugador *j4, int&
                         j2->check_all_in_casa(); /// chequear que todos esten en casa
                         if (j2->get_all_in_casa() && num_movimientos_verde != 6) { /// todas las fichas estan en casa y no ha tocado 6? pierde turno
                             ++turno;
+                        } else if (!(j2->get_all_in_casa()) && num_movimientos_verde == 6) { /// tiene al menos una ficha en jugego y sacó 6? turno extra
+                            if (veces_dado_dio_6_verde == 3) { /// saco tres veces seguidas 6
+                                veces_dado_dio_6_verde = 0;
+                                ++turno;
+                            } else {
+                                verde_saco_6 = true;
+                                ++veces_dado_dio_6_verde;
+                            }
                         }
                     } else if (turno == 2) {
                         num_movimientos_rojo = dado.lanzar();
@@ -216,6 +241,14 @@ void Window::openWindow(Jugador *j1, Jugador *j2, Jugador *j3, Jugador *j4, int&
                         j3->check_all_in_casa(); /// chequear que todos esten en casa
                         if (j3->get_all_in_casa() && num_movimientos_rojo != 6) { /// todas las fichas estan en casa y no ha tocado 6? pierde turno
                             ++turno;
+                        } else if (!(j3->get_all_in_casa()) && num_movimientos_rojo == 6) { /// tiene al menos una ficha en jugego y sacó 6? turno extra
+                            if (veces_dado_dio_6_rojo == 3) { /// saco tres veces seguidas 6
+                                veces_dado_dio_6_rojo = 0;
+                                ++turno;
+                            } else {
+                                rojo_saco_6 = true;
+                                ++veces_dado_dio_6_rojo;
+                            }
                         }
                     } else if (turno == 3) {
                         num_movimientos_azul = dado.lanzar();
@@ -224,6 +257,14 @@ void Window::openWindow(Jugador *j1, Jugador *j2, Jugador *j3, Jugador *j4, int&
                         j4->check_all_in_casa(); /// chequear que todos esten en casa
                         if (j4->get_all_in_casa() && num_movimientos_azul != 6) { /// todas las fichas estan en casa y no ha tocado 6? pierde turno
                             turno = 0;
+                        } else if (!(j4->get_all_in_casa()) && num_movimientos_azul == 6) { /// tiene al menos una ficha en jugego y sacó 6? turno extra
+                            if (veces_dado_dio_6_azul == 3) { /// saco tres veces seguidas 6
+                                veces_dado_dio_6_azul = 0;
+                                ++turno;
+                            } else {
+                                azul_saco_6 = true;
+                                ++veces_dado_dio_6_azul;
+                            }
                         }
                     }
                     updateWindow(sprite, dado_resultado.get_dado_resultado(), turno_text, jugadores, num_jugadores); /// dibujar todo de nuevo
@@ -240,7 +281,7 @@ void Window::openWindow(Jugador *j1, Jugador *j2, Jugador *j3, Jugador *j4, int&
                 } else if (ficha1_amarilla->get_estado() == 'J') { /// mover la ficha si ya no esta en casa
                     jugador_amarillo->move_ficha_to(tablero.get_casilla_at(num_movimientos_amarillo+ficha1_amarilla->get_posicion_actual(), 4, num_movimientos_amarillo, fichas_metidas_amarillo), 0, num_movimientos_amarillo);
                 }
-                reset4jugadores(4);
+                reset4jugadores(4, amarillo_saco_6);
                 clicked_on_j1_f1 = false;
 
             } else if (clicked_on_j1_f2) { /// click en la segunda ficha
@@ -249,7 +290,7 @@ void Window::openWindow(Jugador *j1, Jugador *j2, Jugador *j3, Jugador *j4, int&
                 } else if (ficha2_amarilla->get_estado() == 'J') { /// mover la ficha si ya no esta en casa
                     jugador_amarillo->move_ficha_to(tablero.get_casilla_at(num_movimientos_amarillo+ficha2_amarilla->get_posicion_actual(), 4, num_movimientos_amarillo, fichas_metidas_amarillo), 1, num_movimientos_amarillo);
                 }
-                reset4jugadores(4);
+                reset4jugadores(4, amarillo_saco_6);
                 clicked_on_j1_f2 = false;
 
             } else if (clicked_on_j1_f3) { /// click en la tercera ficha
@@ -258,7 +299,7 @@ void Window::openWindow(Jugador *j1, Jugador *j2, Jugador *j3, Jugador *j4, int&
                 } else if (ficha3_amarilla->get_estado() == 'J') { /// mover la ficha si ya no esta en casa
                     jugador_amarillo->move_ficha_to(tablero.get_casilla_at(num_movimientos_amarillo+ficha3_amarilla->get_posicion_actual(), 4, num_movimientos_amarillo, fichas_metidas_amarillo), 2, num_movimientos_amarillo);
                 }
-                reset4jugadores(4);
+                reset4jugadores(4, amarillo_saco_6);
                 clicked_on_j1_f3 = false;
 
             } else if (clicked_on_j1_f4) { /// click en la cuarta ficha
@@ -267,7 +308,7 @@ void Window::openWindow(Jugador *j1, Jugador *j2, Jugador *j3, Jugador *j4, int&
                 } else if (ficha4_amarilla->get_estado() == 'J') { /// mover la ficha si ya no esta en casa
                     jugador_amarillo->move_ficha_to(tablero.get_casilla_at(num_movimientos_amarillo+ficha4_amarilla->get_posicion_actual(), 4, num_movimientos_amarillo, fichas_metidas_amarillo), 3, num_movimientos_amarillo);
                 }
-                reset4jugadores(4);
+                reset4jugadores(4, amarillo_saco_6);
                 clicked_on_j1_f4 = false;
 
             }
@@ -279,7 +320,7 @@ void Window::openWindow(Jugador *j1, Jugador *j2, Jugador *j3, Jugador *j4, int&
                 } else if (ficha1_verde->get_estado() == 'J') { /// mover la ficha si ya no esta en casa
                     jugador_verde->move_ficha_to(tablero.get_casilla_at(num_movimientos_verde+ficha1_verde->get_posicion_actual(), 3, num_movimientos_verde, fichas_metidas_verde), 0, num_movimientos_verde);
                 }
-                reset4jugadores(3);
+                reset4jugadores(3, verde_saco_6);
                 clicked_on_j2_f1 = false;
 
             } else if (clicked_on_j2_f2) { /// click en la segunda ficha
@@ -288,7 +329,7 @@ void Window::openWindow(Jugador *j1, Jugador *j2, Jugador *j3, Jugador *j4, int&
                 } else if (ficha2_verde->get_estado() == 'J') { /// mover la ficha si ya no esta en casa
                     jugador_verde->move_ficha_to(tablero.get_casilla_at(num_movimientos_verde+ficha2_verde->get_posicion_actual(), 3, num_movimientos_verde, fichas_metidas_verde), 1, num_movimientos_verde);
                 }
-                reset4jugadores(3);
+                reset4jugadores(3, verde_saco_6);
                 clicked_on_j2_f2 = false;
 
             } else if (clicked_on_j2_f3) { /// click en la tercera ficha
@@ -297,7 +338,7 @@ void Window::openWindow(Jugador *j1, Jugador *j2, Jugador *j3, Jugador *j4, int&
                 } else if (ficha3_verde->get_estado() == 'J') { /// mover la ficha si ya no esta en casa
                     jugador_verde->move_ficha_to(tablero.get_casilla_at(num_movimientos_verde+ficha3_verde->get_posicion_actual(), 3, num_movimientos_verde, fichas_metidas_verde), 2, num_movimientos_verde);
                 }
-                reset4jugadores(3);
+                reset4jugadores(3, verde_saco_6);
                 clicked_on_j2_f3 = false;
 
             } else if (clicked_on_j2_f4) { /// click en la cuarta ficha
@@ -306,7 +347,7 @@ void Window::openWindow(Jugador *j1, Jugador *j2, Jugador *j3, Jugador *j4, int&
                 } else if (ficha4_verde->get_estado() == 'J') { /// mover la ficha si ya no esta en casa
                     jugador_verde->move_ficha_to(tablero.get_casilla_at(num_movimientos_verde+ficha4_verde->get_posicion_actual(), 3, num_movimientos_verde, fichas_metidas_verde), 3, num_movimientos_verde);
                 }
-                reset4jugadores(3);
+                reset4jugadores(3, verde_saco_6);
                 clicked_on_j2_f4 = false;
 
             }
@@ -318,7 +359,7 @@ void Window::openWindow(Jugador *j1, Jugador *j2, Jugador *j3, Jugador *j4, int&
                 } else if (ficha1_roja->get_estado() == 'J') { /// mover la ficha si ya no esta en casa
                     jugador_rojo->move_ficha_to(tablero.get_casilla_at(num_movimientos_rojo+ficha1_roja->get_posicion_actual(), 1, num_movimientos_rojo, fichas_metidas_rojo), 0, num_movimientos_rojo);
                 }
-                reset4jugadores(1);
+                reset4jugadores(1, rojo_saco_6);
                 clicked_on_j3_f1 = false;
 
             } else if (clicked_on_j3_f2) { /// click en la segunda ficha
@@ -327,7 +368,7 @@ void Window::openWindow(Jugador *j1, Jugador *j2, Jugador *j3, Jugador *j4, int&
                 } else if (ficha2_roja->get_estado() == 'J') { /// mover la ficha si ya no esta en casa
                     jugador_rojo->move_ficha_to(tablero.get_casilla_at(num_movimientos_rojo+ficha2_roja->get_posicion_actual(), 1, num_movimientos_rojo, fichas_metidas_rojo), 1, num_movimientos_rojo);
                 }
-                reset4jugadores(1);
+                reset4jugadores(1, rojo_saco_6);
                 clicked_on_j3_f2 = false;
 
             } else if (clicked_on_j3_f3) { /// click en la tercera ficha
@@ -336,7 +377,7 @@ void Window::openWindow(Jugador *j1, Jugador *j2, Jugador *j3, Jugador *j4, int&
                 } else if (ficha3_roja->get_estado() == 'J') { /// mover la ficha si ya no esta en casa
                     jugador_rojo->move_ficha_to(tablero.get_casilla_at(num_movimientos_rojo+ficha3_roja->get_posicion_actual(), 1, num_movimientos_rojo, fichas_metidas_rojo), 2, num_movimientos_rojo);
                 }
-                reset4jugadores(1);
+                reset4jugadores(1, rojo_saco_6);
                 clicked_on_j3_f3 = false;
 
             } else if (clicked_on_j3_f4) { /// click en la cuarta ficha
@@ -345,7 +386,7 @@ void Window::openWindow(Jugador *j1, Jugador *j2, Jugador *j3, Jugador *j4, int&
                 } else if (ficha4_roja->get_estado() == 'J') { /// mover la ficha si ya no esta en casa
                     jugador_rojo->move_ficha_to(tablero.get_casilla_at(num_movimientos_rojo+ficha4_roja->get_posicion_actual(), 1, num_movimientos_rojo, fichas_metidas_rojo), 3, num_movimientos_rojo);
                 }
-                reset4jugadores(1);
+                reset4jugadores(1, rojo_saco_6);
                 clicked_on_j3_f4 = false;
 
             }
@@ -358,7 +399,7 @@ void Window::openWindow(Jugador *j1, Jugador *j2, Jugador *j3, Jugador *j4, int&
                 } else if (ficha1_azul->get_estado() == 'J') { /// mover la ficha si ya no esta en casa
                     jugador_azul->move_ficha_to(tablero.get_casilla_at(num_movimientos_azul+ficha1_azul->get_posicion_actual(), 2, num_movimientos_azul, fichas_metidas_azul), 0, num_movimientos_azul);
                 }
-                reset4jugadores(2);
+                reset4jugadores(2, azul_saco_6);
                 clicked_on_j4_f1 = false;
 
             } else if (clicked_on_j4_f2) { /// click en la segunda ficha
@@ -367,7 +408,7 @@ void Window::openWindow(Jugador *j1, Jugador *j2, Jugador *j3, Jugador *j4, int&
                 } else if (ficha2_azul->get_estado() == 'J') { /// mover la ficha si ya no esta en casa
                     jugador_azul->move_ficha_to(tablero.get_casilla_at(num_movimientos_azul+ficha2_azul->get_posicion_actual(), 2, num_movimientos_azul, fichas_metidas_azul), 1, num_movimientos_azul);
                 }
-                reset4jugadores(2);
+                reset4jugadores(2, azul_saco_6);
                 clicked_on_j4_f2 = false;
 
             } else if (clicked_on_j4_f3) { /// click en la tercera ficha
@@ -376,7 +417,7 @@ void Window::openWindow(Jugador *j1, Jugador *j2, Jugador *j3, Jugador *j4, int&
                 } else if (ficha3_azul->get_estado() == 'J') { /// mover la ficha si ya no esta en casa
                     jugador_azul->move_ficha_to(tablero.get_casilla_at(num_movimientos_azul+ficha3_azul->get_posicion_actual(), 2, num_movimientos_azul, fichas_metidas_azul), 2, num_movimientos_azul);
                 }
-                reset4jugadores(2);
+                reset4jugadores(2, azul_saco_6);
                 clicked_on_j4_f3 = false;
 
             } else if (clicked_on_j4_f4) { /// click en la cuarta ficha
@@ -385,13 +426,27 @@ void Window::openWindow(Jugador *j1, Jugador *j2, Jugador *j3, Jugador *j4, int&
                 } else if (ficha4_azul->get_estado() == 'J') { /// mover la ficha si ya no esta en casa
                     jugador_azul->move_ficha_to(tablero.get_casilla_at(num_movimientos_azul+ficha4_azul->get_posicion_actual(), 2, num_movimientos_azul, fichas_metidas_azul), 3, num_movimientos_azul);
                 }
-                reset4jugadores(2);
+                reset4jugadores(2, azul_saco_6);
                 clicked_on_j4_f4 = false;
             }
         }
 
-        if (fichas_metidas_amarillo == 4 || fichas_metidas_verde == 4 || fichas_metidas_rojo == 4 || fichas_metidas_azul == 4) {
-            // TODO indicar que el jugador ganó
+        /// Algun jugador ya metio las 4 fichas?
+        if (fichas_metidas_amarillo == 4) { /// amarillo ganó
+            window.draw(mensaje_ganador(j1->get_nombre()));
+            sleep_for(3);
+            window.close();
+        } else if (fichas_metidas_verde == 4) { /// verde ganó
+            window.draw(mensaje_ganador(j2->get_nombre()));
+            sleep_for(3);
+            window.close();
+        } else if (fichas_metidas_azul == 4) { /// azul ganó
+            window.draw(mensaje_ganador(j4->get_nombre()));
+            sleep_for(3);
+            window.close();
+        }  else if (fichas_metidas_rojo == 4) { /// rojo ganó
+            window.draw(mensaje_ganador(j3->get_nombre()));
+            sleep_for(3);
             window.close();
         }
 
@@ -399,62 +454,140 @@ void Window::openWindow(Jugador *j1, Jugador *j2, Jugador *j3, Jugador *j4, int&
     } // end of while(window.isOpen())
 }
 
-void Window::reset2jugadores(int color) {
-    switch (color) {
-        case 3:
-            turno = 0;
-            num_movimientos_verde = 0;
-            break;
-        case 4:
-            ++turno;
-            num_movimientos_amarillo = 0;
-            break;
-        default:
-            printf("Invalid color in reset");
-            break;
+sf::Text Window::mensaje_ganador(const string&& nombre_jugador) {
+    mensaje_game_over_font.loadFromFile("/Users/gabrielspranger/Desktop/POO II/Ludo/Fonts/Arial/Arial.ttf");
+    mensaje_game_over.setFont(turno_text_font);
+    mensaje_game_over.setCharacterSize(50);
+    mensaje_game_over.setFillColor(sf::Color::Black);
+    mensaje_game_over.setStyle(sf::Text::Bold);
+    mensaje_game_over.setPosition(566, 566);
+    mensaje_game_over.setString("Ganó " + nombre_jugador + "!");
+    return mensaje_game_over;
+}
+
+void Window::sleep_for(const float& time) {
+    sf::sleep(sf::seconds(time));
+}
+
+void Window::reset2jugadores(const int& color, bool& saco_6) {
+    if (saco_6) {
+        switch (color) {
+            case 3:
+                turno = 1;
+                num_movimientos_verde = 0;
+                break;
+            case 4:
+                turno = 0;
+                num_movimientos_amarillo = 0;
+                break;
+            default:
+                printf("Invalid color in reset");
+                break;
+        }
+        saco_6 = false;
+    } else {
+        switch (color) {
+            case 3:
+                turno = 0;
+                num_movimientos_verde = 0;
+                break;
+            case 4:
+                ++turno;
+                num_movimientos_amarillo = 0;
+                break;
+            default:
+                printf("Invalid color in reset");
+                break;
+        }
     }
 }
 
-void Window::reset3jugadores(int color) {
-    switch (color) {
-        case 1:
-            turno = 0;
-            num_movimientos_rojo = 0;
-            break;
-        case 3:
-            ++turno;
-            num_movimientos_verde = 0;
-            break;
-        case 4:
-            ++turno;
-            num_movimientos_amarillo = 0;
-            break;
-        default:
-            printf("Invalid color in reset");
-            break;
+void Window::reset3jugadores(const int& color, bool& saco_6) {
+    if (saco_6) {
+        switch (color) {
+            case 1:
+                turno = 2;
+                num_movimientos_rojo = 0;
+                break;
+            case 3:
+                turno = 1;
+                num_movimientos_verde = 0;
+                break;
+            case 4:
+                turno = 0;
+                num_movimientos_amarillo = 0;
+                break;
+            default:
+                printf("Invalid color in reset");
+                break;
+        }
+        saco_6 = false;
+    } else {
+        switch (color) {
+            case 1:
+                turno = 0;
+                num_movimientos_rojo = 0;
+                break;
+            case 3:
+                ++turno;
+                num_movimientos_verde = 0;
+                break;
+            case 4:
+                ++turno;
+                num_movimientos_amarillo = 0;
+                break;
+            default:
+                printf("Invalid color in reset");
+                break;
+        }
     }
 }
 
-void Window::reset4jugadores(int color) {
-    switch (color) {
-        case 1:
-            ++turno;
-            num_movimientos_rojo = 0;
-            break;
-        case 2:
-            turno = 0;
-            num_movimientos_azul = 0;
-            break;
-        case 3:
-            ++turno;
-            num_movimientos_verde = 0;
-            break;
-        case 4:
-            ++turno;
-            num_movimientos_amarillo = 0;
-            break;
-        default:
-            printf("Invalid color in reset");
-            break;
+void Window::reset4jugadores(const int& color, bool& saco_6) {
+    if (saco_6) {
+        switch (color) {
+            case 1:
+                turno = 2;
+                num_movimientos_rojo = 0;
+                break;
+            case 2:
+                turno = 3;
+                num_movimientos_azul = 0;
+                break;
+            case 3:
+                turno = 1;
+                num_movimientos_verde = 0;
+                break;
+            case 4:
+                turno = 0;
+                num_movimientos_amarillo = 0;
+                break;
+            default:
+                printf("Invalid color in reset");
+                break;
+        }
+        saco_6 = false;
+    } else {
+        switch (color) {
+            case 1:
+                ++turno;
+                num_movimientos_rojo = 0;
+                break;
+            case 2:
+                turno = 0;
+                num_movimientos_azul = 0;
+                break;
+            case 3:
+                ++turno;
+                num_movimientos_verde = 0;
+                break;
+            case 4:
+                ++turno;
+                num_movimientos_amarillo = 0;
+                break;
+            default:
+                printf("Invalid color in reset");
+                break;
+        }
     }
 }

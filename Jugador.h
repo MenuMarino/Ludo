@@ -51,6 +51,8 @@ public:
 
     };
 
+    string get_nombre() { return nombre; }
+
     sf::FloatRect get_f1_bounds() { return fichas[0]->get_ficha_sprite().getGlobalBounds(); }
     sf::FloatRect get_f2_bounds() { return fichas[1]->get_ficha_sprite().getGlobalBounds(); }
     sf::FloatRect get_f3_bounds() { return fichas[2]->get_ficha_sprite().getGlobalBounds(); }

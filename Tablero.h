@@ -28,7 +28,7 @@ public:
     vector<Casilla*> get_casillas() { return casillas; }
     Casilla* get_casilla_at(int i, int color, int& num_movimientos, int& fichas_metidas) {
         if (color == 4) {
-            if (i > 51) { // se quiere llegar a recta final amarilla
+            if (i > 51) { /// se quiere llegar a recta final amarilla
                 int posicion_actual = i - num_movimientos;
                 int diff = 57 - posicion_actual;
                 if (diff < num_movimientos) {
@@ -45,7 +45,7 @@ public:
             }
         } else if (color == 3) {
             if (i > 51) {
-                if (i > 64) { // se quiere llegar a recta final verde
+                if (i > 64) { /// se quiere llegar a recta final verde
                     int posicion_actual = i - num_movimientos;
                     int diff = 70 - posicion_actual;
                     if (diff < num_movimientos) {
@@ -65,7 +65,7 @@ public:
             }
         } else if (color == 2) {
             if (i > 51) {
-                if (i > 90) {
+                if (i > 90) { /// se quiere llegar a la recta final azul
                     int posicion_actual = i - num_movimientos;
                     int diff = 96 - posicion_actual;
                     if (diff < num_movimientos) {
@@ -85,7 +85,7 @@ public:
             }
         } else if (color == 1) {
             if (i > 51) {
-                if (i > 77) {
+                if (i > 77) { /// se quiere llegar a la recta final rojo
                     int posicion_actual = i - num_movimientos;
                     int diff = 83 - posicion_actual;
                     if (diff < num_movimientos) {

@@ -35,6 +35,9 @@ class Window {
     Tablero tablero;
     sf::Text turno_text;
     sf::Font turno_text_font;
+    sf::Text mensaje_game_over;
+    sf::Font mensaje_game_over_font;
+
 public:
     Window() = default;
     explicit Window(const std::string& WindowName);
@@ -42,9 +45,11 @@ public:
     void openWindow(Jugador* j1, Jugador* j2, Jugador* j3, int& num_jugadores);
     void openWindow(Jugador* j1, Jugador* j2, Jugador* j3, Jugador* j4, int& num_jugadores);
     void updateWindow(const sf::Sprite& background, const sf::Text& dado_result, const sf::Text& turno, const vector<Jugador*>& jugadores, const int& num_jugadores);
-    void reset2jugadores(int color);
-    void reset3jugadores(int color);
-    void reset4jugadores(int color);
+    sf::Text mensaje_ganador(const string&& nombre_jugador);
+    void sleep_for(const float& time);
+    void reset2jugadores(const int& color, bool& saco_6);
+    void reset3jugadores(const int& color, bool& saco_6);
+    void reset4jugadores(const int& color, bool& saco_6);
     ~Window() {
         for (auto& jugador: jugadores)
             delete jugador;
