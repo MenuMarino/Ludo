@@ -44,10 +44,6 @@ Tablero.h
 Casilla.h
 /Users/gabrielspranger/Desktop/POO II/Ludo/Casilla.h
 
-/Users/gabrielspranger/Desktop/POO II/Ludo/Window.cpp
-Window.h
-/Users/gabrielspranger/Desktop/POO II/Ludo/Window.h
-
 /Users/gabrielspranger/Desktop/POO II/Ludo/Window.h
 SFML/Graphics.hpp
 -
