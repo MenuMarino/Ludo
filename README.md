@@ -25,7 +25,8 @@
     - Cada jugador, luego de avanzar el numero de casillas necesarias, entra a su zona segura. Solo ese jugador puede entrar a su zona segura.
     - La casilla destino se encuentra al final de la zona segura. Se debe llegar ahí al tirar el dado con los numeros de movimientos exactos para llegar.
     - Gana el jugador que logre meter sus 4 fichas a la casilla destino.
-	
+    -Jugador que saque 6 y ponga una ficha en juego, está obligado a mover la ficha de la casilla inicial para poder poner otra ficha en juego, de lo contrario perderá el turno.
+		
 # Instrucciones de uso
     Para jugar nuestra version de Ludo es necesario que se sigan los siguietes pasos:
     	Paso 1: Seleccionar el numero de jugadores.
