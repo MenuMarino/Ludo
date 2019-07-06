@@ -16,7 +16,7 @@
 	- 4 : amarillo
 
 # Instrucciones de uso
-    - Falta llenar
+    - Falta llenar  fffffffffffffffffffffffffffffffff
 
 # Reglas de juego o programa
 
