@@ -133,6 +133,7 @@ void Tablero::crear_casas() {
 
 Tablero::Tablero() {
 
+    /// Esto da error de malloc
 //    thread t1(&Tablero::crear_primera_mitad, this);
 //    thread t2(&Tablero::crear_segunda_mitad, this);
 //    thread t3(&Tablero::crear_recta_final_verde_amarilla, this);
@@ -154,17 +155,6 @@ Tablero::Tablero() {
     crear_casas();
 
     casillas_size = casillas.size();
-    recta_final_amarillo_size = recta_final_amarillo.size();
-    recta_final_verde_size = recta_final_verde.size();
-    recta_final_rojo_size = recta_final_rojo.size();
-    recta_final_azul_size = recta_final_azul.size();
-
-    for (int i = 0; i < casillas_size-1; ++i) {
-        casillas[i]->next = casillas[i+1];
-        casillas[i+1]->previous = casillas[i];
-    }
-
-    casillas[casillas_size-1]->next = casillas[0];
 }
 
 Tablero::~Tablero() {

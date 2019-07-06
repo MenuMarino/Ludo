@@ -93,15 +93,6 @@
 		<Unit filename="/Users/gabrielspranger/Desktop/POO II/Ludo/Ficha.h">
 			<Option target="Ludo"/>
 		</Unit>
-		<Unit filename="/Users/gabrielspranger/Desktop/POO II/Ludo/Juego.cpp">
-			<Option target="Ludo"/>
-		</Unit>
-		<Unit filename="/Users/gabrielspranger/Desktop/POO II/Ludo/Juego.h">
-			<Option target="Ludo"/>
-		</Unit>
-		<Unit filename="/Users/gabrielspranger/Desktop/POO II/Ludo/Jugador.cpp">
-			<Option target="Ludo"/>
-		</Unit>
 		<Unit filename="/Users/gabrielspranger/Desktop/POO II/Ludo/Jugador.h">
 			<Option target="Ludo"/>
 		</Unit>

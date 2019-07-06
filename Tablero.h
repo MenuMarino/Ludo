@@ -18,14 +18,9 @@ class Tablero {
     vector<Casilla*> casas_azules;
 
     int casillas_size;
-    int recta_final_amarillo_size;
-    int recta_final_verde_size;
-    int recta_final_rojo_size;
-    int recta_final_azul_size;
 public:
     Tablero();
     /// Casillas Normales
-    vector<Casilla*> get_casillas() { return casillas; }
     Casilla* get_casilla_at(int i, int color, int& num_movimientos, int& fichas_metidas) {
         if (color == 4) {
             if (i > 51) { /// se quiere llegar a recta final amarilla
@@ -109,34 +104,6 @@ public:
     Casilla* get_casilla_at(int i, int color) {
         return casillas[i];
     }
-
-    double get_casilla_x_at(int i) { return casillas[i]->get_x(); }
-    double get_casilla_y_at(int i) { return casillas[i]->get_y(); }
-    int get_casilla_size() { return casillas_size; }
-
-    /// Recta Final Amarilla
-    vector<Casilla*> get_recta_final_amarillo() { return recta_final_amarillo; }
-    double get_recta_final_amarillo_x_at(int i) { return recta_final_amarillo[i]->get_x(); }
-    double get_recta_final_amarillo_y_at(int i) { return recta_final_amarillo[i]->get_y(); }
-    int get_recta_final_amarillo_size() { return recta_final_amarillo_size; }
-
-    /// Recta Final Verde
-    vector<Casilla*> get_recta_final_verde() { return recta_final_verde; }
-    double get_recta_final_verde_x_at(int i) { return recta_final_verde[i]->get_x(); }
-    double get_recta_final_verde_y_at(int i) { return recta_final_verde[i]->get_y(); }
-    int get_recta_final_verde_size() { return recta_final_verde_size; }
-
-    /// Recta Final Rojo
-    vector<Casilla*> get_recta_final_rojo() { return recta_final_rojo; }
-    double get_recta_final_rojo_x_at(int i) { return recta_final_rojo[i]->get_x(); }
-    double get_recta_final_rojo_y_at(int i) { return recta_final_rojo[i]->get_y(); }
-    int get_recta_final_rojo_size() { return recta_final_rojo_size; }
-
-    /// Recta Final Azul
-    vector<Casilla*> get_recta_final_azul() { return recta_final_azul; }
-    double get_recta_final_azul_x_at(int i) { return recta_final_azul[i]->get_x(); }
-    double get_recta_final_azul_y_at(int i) { return recta_final_azul[i]->get_y(); }
-    int get_recta_final_azul_size() { return recta_final_azul_size; }
 
     /// Creacion de Casillas Normales
     void crear_primera_mitad();

@@ -150,60 +150,6 @@ Ficha.cpp.s:
 	$(MAKE) -f CMakeFiles/Ludo.dir/build.make CMakeFiles/Ludo.dir/Ficha.cpp.s
 .PHONY : Ficha.cpp.s
 
-Juego.o: Juego.cpp.o
-
-.PHONY : Juego.o
-
-# target to build an object file
-Juego.cpp.o:
-	$(MAKE) -f CMakeFiles/Ludo.dir/build.make CMakeFiles/Ludo.dir/Juego.cpp.o
-.PHONY : Juego.cpp.o
-
-Juego.i: Juego.cpp.i
-
-.PHONY : Juego.i
-
-# target to preprocess a source file
-Juego.cpp.i:
-	$(MAKE) -f CMakeFiles/Ludo.dir/build.make CMakeFiles/Ludo.dir/Juego.cpp.i
-.PHONY : Juego.cpp.i
-
-Juego.s: Juego.cpp.s
-
-.PHONY : Juego.s
-
-# target to generate assembly for a file
-Juego.cpp.s:
-	$(MAKE) -f CMakeFiles/Ludo.dir/build.make CMakeFiles/Ludo.dir/Juego.cpp.s
-.PHONY : Juego.cpp.s
-
-Jugador.o: Jugador.cpp.o
-
-.PHONY : Jugador.o
-
-# target to build an object file
-Jugador.cpp.o:
-	$(MAKE) -f CMakeFiles/Ludo.dir/build.make CMakeFiles/Ludo.dir/Jugador.cpp.o
-.PHONY : Jugador.cpp.o
-
-Jugador.i: Jugador.cpp.i
-
-.PHONY : Jugador.i
-
-# target to preprocess a source file
-Jugador.cpp.i:
-	$(MAKE) -f CMakeFiles/Ludo.dir/build.make CMakeFiles/Ludo.dir/Jugador.cpp.i
-.PHONY : Jugador.cpp.i
-
-Jugador.s: Jugador.cpp.s
-
-.PHONY : Jugador.s
-
-# target to generate assembly for a file
-Jugador.cpp.s:
-	$(MAKE) -f CMakeFiles/Ludo.dir/build.make CMakeFiles/Ludo.dir/Jugador.cpp.s
-.PHONY : Jugador.cpp.s
-
 Tablero.o: Tablero.cpp.o
 
 .PHONY : Tablero.o
@@ -297,12 +243,6 @@ help:
 	@echo "... Ficha.o"
 	@echo "... Ficha.i"
 	@echo "... Ficha.s"
-	@echo "... Juego.o"
-	@echo "... Juego.i"
-	@echo "... Juego.s"
-	@echo "... Jugador.o"
-	@echo "... Jugador.i"
-	@echo "... Jugador.s"
 	@echo "... Tablero.o"
 	@echo "... Tablero.i"
 	@echo "... Tablero.s"

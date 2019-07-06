@@ -243,16 +243,16 @@ void Window::openWindow(Jugador *j1, Jugador *j2, int& num_jugadores) {
             }
         }
 
-        /// Algun jugador ya metio las 4 fichas?
-        if (fichas_metidas_amarillo == 4) { /// amarillo ganó
-            window.draw(mensaje_ganador(j1->get_nombre()));
-            sleep_for(3);
-            window.close();
-        } else if (fichas_metidas_verde == 4) { /// verde ganó
-            window.draw(mensaje_ganador(j2->get_nombre()));
-            sleep_for(3);
-            window.close();
-        }
+//        /// Algun jugador ya metio las 4 fichas?
+//        if (fichas_metidas_amarillo == 4) { /// amarillo ganó
+//            window.draw(mensaje_ganador(j1->get_nombre()));
+//            sleep_for(3);
+//            window.close();
+//        } else if (fichas_metidas_verde == 4) { /// verde ganó
+//            window.draw(mensaje_ganador(j2->get_nombre()));
+//            sleep_for(3);
+//            window.close();
+//        }
 
         updateWindow(sprite, dado_resultado.get_dado_resultado(), turno_text, jugadores, num_jugadores); /// dibujar todo de nuevo
     } // end of while(window.isOpen())
@@ -264,10 +264,6 @@ void Window::openWindow(Jugador *j1, Jugador *j2, int& num_jugadores) {
 
 void Window::openWindow(Jugador *j1, Jugador *j2, Jugador *j3, int& num_jugadores) {
     this->jugadores = {j1, j2, j3};
-
-    // TODO que solo se pueda lanzar el dado 1 vez cuando se tiene al menos una ficha en juego
-
-    // TODO mejorar el código (apariencia, meter la implementación el las clases y más comentarios)
 
     int fichas_metidas_amarillo = 0;
     int fichas_metidas_verde = 0;
@@ -556,20 +552,20 @@ void Window::openWindow(Jugador *j1, Jugador *j2, Jugador *j3, int& num_jugadore
             }
         }
 
-        /// Algun jugador ya metio las 4 fichas?
-        if (fichas_metidas_amarillo == 4) { /// amarillo ganó
-            window.draw(mensaje_ganador(j1->get_nombre()));
-            sleep_for(3);
-            window.close();
-        } else if (fichas_metidas_verde == 4) { /// verde ganó
-            window.draw(mensaje_ganador(j2->get_nombre()));
-            sleep_for(3);
-            window.close();
-        } else if (fichas_metidas_rojo == 4) { /// rojo ganó
-            window.draw(mensaje_ganador(j3->get_nombre()));
-            sleep_for(3);
-            window.close();
-        }
+//        /// Algun jugador ya metio las 4 fichas?
+//        if (fichas_metidas_amarillo == 4) { /// amarillo ganó
+//            window.draw(mensaje_ganador(j1->get_nombre()));
+//            sleep_for(3);
+//            window.close();
+//        } else if (fichas_metidas_verde == 4) { /// verde ganó
+//            window.draw(mensaje_ganador(j2->get_nombre()));
+//            sleep_for(3);
+//            window.close();
+//        } else if (fichas_metidas_rojo == 4) { /// rojo ganó
+//            window.draw(mensaje_ganador(j3->get_nombre()));
+//            sleep_for(3);
+//            window.close();
+//        }
 
         updateWindow(sprite, dado_resultado.get_dado_resultado(), turno_text, jugadores, num_jugadores); /// dibujar todo de nuevo
     } // end of while(window.isOpen())
@@ -581,10 +577,6 @@ void Window::openWindow(Jugador *j1, Jugador *j2, Jugador *j3, int& num_jugadore
 
 void Window::openWindow(Jugador *j1, Jugador *j2, Jugador *j3, Jugador *j4, int& num_jugadores) {
     this->jugadores = {j1, j2, j3, j4};
-
-    // TODO que solo se pueda lanzar el dado 1 vez cuando se tiene al menos una ficha en juego
-
-    // TODO mejorar el código (apariencia, meter la implementación el las clases y más comentarios)
 
     int fichas_metidas_amarillo = 0;
     int fichas_metidas_verde = 0;
@@ -796,6 +788,21 @@ void Window::openWindow(Jugador *j1, Jugador *j2, Jugador *j3, Jugador *j4, int&
                     updateWindow(sprite, dado_resultado.get_dado_resultado(), turno_text, jugadores, num_jugadores); /// dibujar todo de nuevo
                 }
             }
+
+//            /// Algun jugador ya metio las 4 fichas?
+//            if (fichas_metidas_amarillo == 4) { /// amarillo ganó
+//                window.draw(mensaje_ganador(j1->get_nombre()));
+//                sleep_for(3);
+//                window.close();
+//            } else if (fichas_metidas_verde == 4) { /// verde ganó
+//                window.draw(mensaje_ganador(j2->get_nombre()));
+//                sleep_for(3);
+//                window.close();
+//            } else if (fichas_metidas_rojo == 4) { /// rojo ganó
+//                window.draw(mensaje_ganador(j3->get_nombre()));
+//                sleep_for(3);
+//                window.close();
+//            }
 
         } // end of while (pollEvent(event))
 

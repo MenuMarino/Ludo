@@ -70,22 +70,9 @@ CMakeFiles/Ludo.dir/Tablero.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Ludo.dir/Tablero.cpp.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/gabrielspranger/Desktop/POO II/Ludo/Tablero.cpp" -o CMakeFiles/Ludo.dir/Tablero.cpp.s
 
-CMakeFiles/Ludo.dir/Jugador.cpp.o: CMakeFiles/Ludo.dir/flags.make
-CMakeFiles/Ludo.dir/Jugador.cpp.o: ../Jugador.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/gabrielspranger/Desktop/POO II/Ludo/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Ludo.dir/Jugador.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Ludo.dir/Jugador.cpp.o -c "/Users/gabrielspranger/Desktop/POO II/Ludo/Jugador.cpp"
-
-CMakeFiles/Ludo.dir/Jugador.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Ludo.dir/Jugador.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/gabrielspranger/Desktop/POO II/Ludo/Jugador.cpp" > CMakeFiles/Ludo.dir/Jugador.cpp.i
-
-CMakeFiles/Ludo.dir/Jugador.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Ludo.dir/Jugador.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/gabrielspranger/Desktop/POO II/Ludo/Jugador.cpp" -o CMakeFiles/Ludo.dir/Jugador.cpp.s
-
 CMakeFiles/Ludo.dir/Ficha.cpp.o: CMakeFiles/Ludo.dir/flags.make
 CMakeFiles/Ludo.dir/Ficha.cpp.o: ../Ficha.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/gabrielspranger/Desktop/POO II/Ludo/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Ludo.dir/Ficha.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/gabrielspranger/Desktop/POO II/Ludo/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Ludo.dir/Ficha.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Ludo.dir/Ficha.cpp.o -c "/Users/gabrielspranger/Desktop/POO II/Ludo/Ficha.cpp"
 
 CMakeFiles/Ludo.dir/Ficha.cpp.i: cmake_force
@@ -98,7 +85,7 @@ CMakeFiles/Ludo.dir/Ficha.cpp.s: cmake_force
 
 CMakeFiles/Ludo.dir/main.cpp.o: CMakeFiles/Ludo.dir/flags.make
 CMakeFiles/Ludo.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/gabrielspranger/Desktop/POO II/Ludo/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Ludo.dir/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/gabrielspranger/Desktop/POO II/Ludo/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Ludo.dir/main.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Ludo.dir/main.cpp.o -c "/Users/gabrielspranger/Desktop/POO II/Ludo/main.cpp"
 
 CMakeFiles/Ludo.dir/main.cpp.i: cmake_force
@@ -111,7 +98,7 @@ CMakeFiles/Ludo.dir/main.cpp.s: cmake_force
 
 CMakeFiles/Ludo.dir/Window.cpp.o: CMakeFiles/Ludo.dir/flags.make
 CMakeFiles/Ludo.dir/Window.cpp.o: ../Window.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/gabrielspranger/Desktop/POO II/Ludo/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Ludo.dir/Window.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/gabrielspranger/Desktop/POO II/Ludo/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Ludo.dir/Window.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Ludo.dir/Window.cpp.o -c "/Users/gabrielspranger/Desktop/POO II/Ludo/Window.cpp"
 
 CMakeFiles/Ludo.dir/Window.cpp.i: cmake_force
@@ -122,43 +109,26 @@ CMakeFiles/Ludo.dir/Window.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Ludo.dir/Window.cpp.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/gabrielspranger/Desktop/POO II/Ludo/Window.cpp" -o CMakeFiles/Ludo.dir/Window.cpp.s
 
-CMakeFiles/Ludo.dir/Juego.cpp.o: CMakeFiles/Ludo.dir/flags.make
-CMakeFiles/Ludo.dir/Juego.cpp.o: ../Juego.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/gabrielspranger/Desktop/POO II/Ludo/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Ludo.dir/Juego.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Ludo.dir/Juego.cpp.o -c "/Users/gabrielspranger/Desktop/POO II/Ludo/Juego.cpp"
-
-CMakeFiles/Ludo.dir/Juego.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Ludo.dir/Juego.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/gabrielspranger/Desktop/POO II/Ludo/Juego.cpp" > CMakeFiles/Ludo.dir/Juego.cpp.i
-
-CMakeFiles/Ludo.dir/Juego.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Ludo.dir/Juego.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/gabrielspranger/Desktop/POO II/Ludo/Juego.cpp" -o CMakeFiles/Ludo.dir/Juego.cpp.s
-
 # Object files for target Ludo
 Ludo_OBJECTS = \
 "CMakeFiles/Ludo.dir/Tablero.cpp.o" \
-"CMakeFiles/Ludo.dir/Jugador.cpp.o" \
 "CMakeFiles/Ludo.dir/Ficha.cpp.o" \
 "CMakeFiles/Ludo.dir/main.cpp.o" \
-"CMakeFiles/Ludo.dir/Window.cpp.o" \
-"CMakeFiles/Ludo.dir/Juego.cpp.o"
+"CMakeFiles/Ludo.dir/Window.cpp.o"
 
 # External object files for target Ludo
 Ludo_EXTERNAL_OBJECTS =
 
 Ludo: CMakeFiles/Ludo.dir/Tablero.cpp.o
-Ludo: CMakeFiles/Ludo.dir/Jugador.cpp.o
 Ludo: CMakeFiles/Ludo.dir/Ficha.cpp.o
 Ludo: CMakeFiles/Ludo.dir/main.cpp.o
 Ludo: CMakeFiles/Ludo.dir/Window.cpp.o
-Ludo: CMakeFiles/Ludo.dir/Juego.cpp.o
 Ludo: CMakeFiles/Ludo.dir/build.make
 Ludo: /usr/local/Cellar/sfml/2.5.1/lib/libsfml-graphics.2.5.1.dylib
 Ludo: /usr/local/Cellar/sfml/2.5.1/lib/libsfml-window.2.5.1.dylib
 Ludo: /usr/local/Cellar/sfml/2.5.1/lib/libsfml-system.2.5.1.dylib
 Ludo: CMakeFiles/Ludo.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/Users/gabrielspranger/Desktop/POO II/Ludo/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable Ludo"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/Users/gabrielspranger/Desktop/POO II/Ludo/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable Ludo"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Ludo.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

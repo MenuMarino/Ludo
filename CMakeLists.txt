@@ -18,5 +18,5 @@ if(SFML_FOUND)
     message(STATUS "SFML_VERSION: ${SFML_VERSION}")
 endif()
 
-add_executable(Ludo Tablero.cpp Jugador.h Jugador.cpp Ficha.cpp main.cpp Window.cpp Window.h Juego.cpp DadoResultado.h)
+add_executable(Ludo Tablero.cpp Jugador.h Ficha.cpp main.cpp Window.cpp Window.h DadoResultado.h)
 target_link_libraries (Ludo sfml-graphics sfml-window sfml-system)

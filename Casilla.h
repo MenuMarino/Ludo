@@ -11,8 +11,6 @@ using namespace std;
 
 class Casilla {
     Ficha* current_ficha;
-    Casilla* next;
-    Casilla* previous;
     double x; // posicion en x
     double y; // posicion en y
     int color; // 1 rojo 2 azul 3 verde 4 amarillo
@@ -39,19 +37,6 @@ public:
 
     double get_x() { return x; }
     double get_y() { return y; }
-    int get_color() { return color; }
-
-    bool get_is_casa() { return is_casa; }
-    bool get_is_zona_segura() { return is_zona_segura; }
-    bool get_is_destino_final() { return is_destino_final; }
-    bool get_is_ultima_casilla_normal() { return is_ultima_casilla_normal; }
-    bool get_is_normal() { return is_normal; }
-
-    void set_is_casa(bool _is_casa) { is_casa = _is_casa; }
-    void set_is_zona_segura(bool _is_zona_segura) { is_zona_segura = _is_zona_segura; }
-    void set_is_destino_final(bool _is_destino_final) { is_destino_final = _is_destino_final; }
-    void set_is_ultima_casilla_normal(bool _is_ultima_casilla_normal) { is_ultima_casilla_normal = _is_ultima_casilla_normal; }
-    void set_is_normal(bool _is_normal) { is_normal = _is_normal; }
 
 };
 

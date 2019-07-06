@@ -5,8 +5,6 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "/Users/gabrielspranger/Desktop/POO II/Ludo/Ficha.cpp" "/Users/gabrielspranger/Desktop/POO II/Ludo/cmake-build-debug/CMakeFiles/Ludo.dir/Ficha.cpp.o"
-  "/Users/gabrielspranger/Desktop/POO II/Ludo/Juego.cpp" "/Users/gabrielspranger/Desktop/POO II/Ludo/cmake-build-debug/CMakeFiles/Ludo.dir/Juego.cpp.o"
-  "/Users/gabrielspranger/Desktop/POO II/Ludo/Jugador.cpp" "/Users/gabrielspranger/Desktop/POO II/Ludo/cmake-build-debug/CMakeFiles/Ludo.dir/Jugador.cpp.o"
   "/Users/gabrielspranger/Desktop/POO II/Ludo/Tablero.cpp" "/Users/gabrielspranger/Desktop/POO II/Ludo/cmake-build-debug/CMakeFiles/Ludo.dir/Tablero.cpp.o"
   "/Users/gabrielspranger/Desktop/POO II/Ludo/Window.cpp" "/Users/gabrielspranger/Desktop/POO II/Ludo/cmake-build-debug/CMakeFiles/Ludo.dir/Window.cpp.o"
   "/Users/gabrielspranger/Desktop/POO II/Ludo/main.cpp" "/Users/gabrielspranger/Desktop/POO II/Ludo/cmake-build-debug/CMakeFiles/Ludo.dir/main.cpp.o"

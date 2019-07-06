@@ -30,6 +30,12 @@ SFML/Graphics.hpp
 Dado.h
 /Users/gabrielspranger/Desktop/POO II/Ludo/Dado.h
 
+/Users/gabrielspranger/Desktop/POO II/Ludo/Ficha.cpp
+Ficha.h
+/Users/gabrielspranger/Desktop/POO II/Ludo/Ficha.h
+Jugador.h
+/Users/gabrielspranger/Desktop/POO II/Ludo/Jugador.h
+
 /Users/gabrielspranger/Desktop/POO II/Ludo/Ficha.h
 Casilla.h
 /Users/gabrielspranger/Desktop/POO II/Ludo/Casilla.h
@@ -40,9 +46,17 @@ Ficha.h
 Tablero.h
 /Users/gabrielspranger/Desktop/POO II/Ludo/Tablero.h
 
+/Users/gabrielspranger/Desktop/POO II/Ludo/Tablero.cpp
+Tablero.h
+/Users/gabrielspranger/Desktop/POO II/Ludo/Tablero.h
+
 /Users/gabrielspranger/Desktop/POO II/Ludo/Tablero.h
 Casilla.h
 /Users/gabrielspranger/Desktop/POO II/Ludo/Casilla.h
+
+/Users/gabrielspranger/Desktop/POO II/Ludo/Window.cpp
+Window.h
+/Users/gabrielspranger/Desktop/POO II/Ludo/Window.h
 
 /Users/gabrielspranger/Desktop/POO II/Ludo/Window.h
 SFML/Graphics.hpp

@@ -6,11 +6,6 @@
 
 class Jugador {
     Tablero tablero;
-    int current_ficha = 0;
-    int ficha_a_sacar_de_casa_roja = 0;
-    int ficha_a_sacar_de_casa_azul = 0;
-    int ficha_a_sacar_de_casa_verde = 0;
-    int ficha_a_sacar_de_casa_amarilla = 0;
     string nombre;
     int color;
     vector<Ficha*> fichas;
@@ -58,7 +53,6 @@ public:
     sf::FloatRect get_f3_bounds() { return fichas[2]->get_ficha_sprite().getGlobalBounds(); }
     sf::FloatRect get_f4_bounds() { return fichas[3]->get_ficha_sprite().getGlobalBounds(); }
 
-    void set_all_in_casa(bool _all_in_casa) { all_in_casa = _all_in_casa; }
     bool get_all_in_casa() { return all_in_casa; }
 
     void move_ficha_to(Casilla* casilla, int ficha, int movimientos) {
@@ -103,7 +97,6 @@ public:
         }
     }
 
-    void set_current_ficha(int i) { current_ficha = i; }
 
     Ficha* get_ficha_at(int i) { return fichas[i]; }
     sf::CircleShape get_ficha_sprite_at(int i) { return fichas[i]->get_ficha_sprite(); }
